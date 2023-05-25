@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+div.container {
+    border: 2px solid black;
+    height: 60px;
+    padding: 0 1rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 12PX;
+    color: black;
+}
+
+.bt1,.bt2  {
+    padding: 4px 24px;
+    margin-top: 5px;
+    margin-left: 12PX;
+    border-radius: 30px;
+    background-color: white;
+}
