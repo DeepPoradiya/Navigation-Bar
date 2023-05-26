@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+div.container {
+    border: 2px solid black;
+    height: auto;
+    padding: 0 1rem;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid black;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#s1 {
+    border: none;
+}
+
+.sticker i {
+    padding: 10px;
+    margin-left: 10px;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 12PX;
+    color: black;
+    border-right: 2px solid black;
+    padding-right: 26px;
+
+}
+
+#contact {
+    border-right: none;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+
+}
+
+.content1 ul li,
+.content2 ul li,
+.content3 ul li {
+    text-transform: capitalize;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link:visited {
+    color: rgb(5, 201, 201);
+}
+
+.Apple ul,
+.beats ul,
+.bose ul,
+.audes ul,
+.sony ul {
+    list-style-type: none;
+}
