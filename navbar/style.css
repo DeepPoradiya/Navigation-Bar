@@ -1,0 +1,42 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+div.header
+{
+    text-align: center;
+    border-bottom: 5px solid black;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    background-color: rgb(143, 183, 188);
+    color: aliceblue;
+}
+button
+{
+    background-color: rgb(250, 243, 248);
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 30px;
+
+}
+.buttons
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgb(143, 183, 188);
+
+
+}
+button a
+{
+    text-decoration: none;
+    padding: 10px 10px;
+    color: rgb(30, 30, 31);
+    font-size: 20px;
+}
+button:hover
+{
+    background-color: rgba(59, 20, 255, 0.448);
+}
