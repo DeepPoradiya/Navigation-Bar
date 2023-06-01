@@ -2,13 +2,26 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    font-size: 14px;
+
 }
+
+.main {
+
+    display: flex;
+    justify-content: space-around;
+}
+
 div.container {
-    border: 2px solid black;
+    width: 80%;
     height: 60px;
-    padding: 0 1rem;
+    padding: 20px;
+    background-color: white;
 }
 
 .nav {
@@ -16,12 +29,13 @@ div.container {
     justify-content: space-between;
     align-items: center;
     height: inherit;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 ul {
     list-style-type: none;
+
 }
 
 ul li {
@@ -33,12 +47,13 @@ ul li a {
     padding: 10px;
     margin-left: 12PX;
     color: black;
+
 }
 
 div.menu button {
-    padding: 4px 24px;
-    margin-top: 5px;
-    margin-left: 12PX;
+    padding: 8px 50px;
     border-radius: 30px;
     background-color: white;
+    border: 2px solid gray;
+    font-size: 15px;
 }

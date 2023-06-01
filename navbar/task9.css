@@ -1,47 +1,61 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f3;
+   
+}
+
+.main {
+
+    display: flex;
+    justify-content: space-around;
+
 }
 
 div.container {
-    border: 2px solid black;
     height: auto;
-    padding: 0 1rem;
+    width: 80%;
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .nav1 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 3px solid black;
-    padding: 10px;
+        align-items: center;
+    border-bottom: 1px solid rgb(151, 147, 147);
     margin-left: 100px;
     margin-right: 100px;
 }
-
-#s1 {
+#s1
+{
     border: none;
 }
-
 .sticker i {
-    padding: 10px;
-    margin-left: 10px;
-
+    padding: 10px 0px;
+    margin-left: 20px;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 80px;
     margin-left: 100px;
     margin-right: 100px;
 }
 
+.menu ul li+li::before {
+    color: black;
+    padding: 10px;
+    content: "|\00a0";
+}
 
 .menu ul {
     list-style-type: none;
@@ -56,19 +70,24 @@ div.container {
     padding: 10px;
     margin-left: 12PX;
     color: black;
-    border-right: 2px solid black;
-    padding-right: 26px;
+    padding-right: 10px;
 
 }
 
-#contact {
-    border-right: none;
-}
+
 
 .container1 {
+    padding: 2rem 3rem;
+    max-width: 80%;
+    height: auto;
+    gap: 3rem;
+    position: relative;
+
+    margin-top: 10px;   
+    width: 80%;
     display: flex;
-    justify-content: space-around;
-    border: 1px solid black;
+    justify-content: space-between;
+    background-color:white;
 
 }
 
@@ -77,31 +96,25 @@ div.container {
 .content3 ul li {
     text-transform: capitalize;
 }
-
+/* 
 .content1 {
+
+    margin-top: 45px;
+}
+.content3
+{
+    margin-right: 40px;
+} */
+
+.content2,.content3 ,.content1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 60px;
+    justify-content: start;
+    gap: 1rem;
 }
-
-.content2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.content3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
 .link:visited {
-    color: rgb(5, 201, 201);
+    color: rgb(61, 140, 219);
 }
 
 .Apple ul,
@@ -111,3 +124,11 @@ div.container {
 .sony ul {
     list-style-type: none;
 }
+.photo
+{
+    position: absolute;
+    bottom: -5px;
+    left:0;
+
+}
+

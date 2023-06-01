@@ -2,20 +2,32 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f3;
+    font-weight: bold;
+    font-size: 14px;
 }
+
+.main {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
 div.container {
-    border: 2px solid black;
-    height:auto;
-    padding: 0 1rem;
+    height: auto;
+    width: 80%;
+    background-color: white;
 }
+
 .nav1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid black;
-    padding: 10px;
+    border-bottom: 1px solid gray;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -23,26 +35,29 @@ div.container {
 .nav1 ul li {
     display: inline;
 }
+
 .nav1 ul {
     list-style-type: none;
 }
+
 .nav1 ul li a {
     text-decoration: none;
-    padding: 10px;
-    margin-left: 12PX;
-    color: black;
-}
-.sticker i
-{
-    padding: 10px;
-    margin-left: 10px;
+    color: gray;
+    margin-right: 20px;
 
 }
+
+.sticker i {
+    margin-left: 20px;
+    padding:10px 0px;
+
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 80px;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -58,8 +73,6 @@ div.container {
 
 .menu ul li a {
     text-decoration: none;
-    padding: 10px;
-    margin-left: 12PX;
+    margin-left: 25PX;
     color: black;
 }
-
