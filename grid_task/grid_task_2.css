@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;}
+.container {
+    width: 100%;
+    background-color: #ffc63d;
+    height: 300px;
+    display: grid;
+    place-items: center;
+}
+
+.sub_container {
+    padding: 20px;
+    position: relative;
+    top: 100px;
+    height: 700px;
+    width: 80%;
+    display: grid;
+    gap:10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+}
+
+.box
+{
+    overflow: hidden;
+}
+#box1
+{
+    grid-row: 1 / span 2;
+}
+#box2
+{
+    grid-row: 2 / span 2;
+}
+#box3
+{
+    grid-row: 1 / span 2;
+}
+
+#box4
+{
+    grid-row: 2 / span 2;
+}
+#box5
+{
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 4;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    }
+img{
+    object-fit: fill;
+}
+input[type=email]
+{
+    background-color: rgb(246, 242, 242);
+    line-height:40px;
+    width: 60%;
+    border: 1px solid gray;
+    padding: 0px 10px;
+}
+input[type=submit]
+{
+    background-color: #ffc63d;
+    line-height:40px;
+    width: 20%;
+    border: none;
+    font-weight: bold;
+}
+input[type=submit]:hover{
+    background-color: black;
+    color: white;
+}
+.content1
+{   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fa-solid 
+{
+    color: #ffc63d;
+}
+.content
+{
+    padding: 20px 0;
+}
+.content1
+{
+    padding: 20px 0;
+}
