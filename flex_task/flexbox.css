@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url('R.jpeg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sub_container {
+    width: 80%;
+}
+
+.header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 10px;
+    border: 2px solid gray;
+    box-shadow: 5px 7px 10px rgb(17, 16, 16);
+    padding: 10px;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav {
+    margin: 3rem 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li a i {
+    margin: 0 7px;
+}
+
+.subbody {
+    position: relative;
+    margin-top: 20px;
+    height: 400px;
+
+}
+.sidebar ul li:hover {
+    background-color: rgb(6, 6, 6);
+    color: white;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: inherit;
+    background:transparent;
+    background-image: url('OIP.jpeg');
+
+}
+.sidebar ul li {
+    line-height: 70px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(240, 232, 232);
+}
+
+.sidebar ul li a i {
+    margin: 0 20px;
+}
+.content {
+    height: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+  
+}
+
+
+.home {
+    height: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    background-image: url('hot-air-balloon-278993_1280.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20px;
+}
+.movie_info
+{
+    height: inherit;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 50px 1fr;
+}
+#box1
+{
+    grid-row: 1 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box7
+{
+    grid-column:2 / span 1 ;
+    grid-row: 4 / span 1;
+}
+#box5
+{
+    grid-column: 3 / span 1;
+      grid-row: 2 / span 3;
+}
+#box4 ul
+{
+    list-style-type: none;
+}
+#box2,#box3,#box6
+{
+    font-size: 30px;
+}
+.cast ul
+{
+    list-style-type: none;
+}
