@@ -4,8 +4,11 @@
 }
 
 .container {
+    width: 100%;
     background-image: url('R.jpeg');
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
     display: flex;
     justify-content: center;
 
@@ -61,6 +64,7 @@ button {
     height: 400px;
 
 }
+
 .sidebar ul li:hover {
     background-color: rgb(6, 6, 6);
     color: white;
@@ -70,12 +74,13 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 20%;
+    width: 100%;
     height: inherit;
-    background:transparent;
+    background: transparent;
     background-image: url('OIP.jpeg');
 
 }
+
 .sidebar ul li {
     line-height: 70px;
 }
@@ -93,19 +98,10 @@ button {
 .sidebar ul li a i {
     margin: 0 20px;
 }
-.content {
-    height: inherit;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 80%;
-  
-}
-
 
 .home {
     height: inherit;
-    position: absolute;
+        position: absolute;
     top: 0;
     right: 0;
     width: 80%;
@@ -114,8 +110,8 @@ button {
     background-repeat: no-repeat;
     background-position: 20px;
 }
-.movie_info
-{
+
+.movie_info {
     height: inherit;
     width: 100%;
     position: absolute;
@@ -125,32 +121,60 @@ button {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 1fr 50px 1fr;
 }
-#box1
-{
+
+#box1 {
     grid-row: 1 / span 4;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#box7
-{
-    grid-column:2 / span 1 ;
+
+#box7 {
+    grid-column: 2 / span 1;
     grid-row: 4 / span 1;
 }
-#box5
-{
+
+#box5 {
     grid-column: 3 / span 1;
-      grid-row: 2 / span 3;
+    grid-row: 2 / span 3;
 }
-#box4 ul
-{
+
+#box4 ul {
     list-style-type: none;
 }
-#box2,#box3,#box6
-{
+
+#box2,
+#box3,
+#box6 {
     font-size: 30px;
 }
-.cast ul
-{
+
+.cast ul {
     list-style-type: none;
+}
+
+@media screen and (max-width:400px) {
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 1rem 0;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header button {
+        margin-top: 3rem;
+    }
+   
+
 }
