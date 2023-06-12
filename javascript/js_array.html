@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        border: 2px solid black;
+        height: auto;
+        width: 100%;
+      }
+      .btn {
+        border: 2px solid black;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        text-transform: uppercase;
+        margin: 5px;
+      }
+      .output {
+        font-size: 20px;
+        padding: 20px;
+      }
+    </style>
+    <script src="js_array.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn">
+        <h1>ARRAY</h1>
+        <button onclick="array_fun()">SIMPLE ARRAY</button>
+        <button onclick="array2_fun()">ARRAY INDEX DECLARE</button>
+        <button onclick="array3_fun()">ARRAY NEW KEYWORD</button>
+        <button onclick="array4_fun()">Accessing Array Elements</button>
+        <button onclick="array5_fun()">The toString() Method</button>
+        <button onclick="array6_fun()">Array Object</button>
+        <button onclick="array7_fun()">Array length</button>
+        <button onclick="array8_fun()">Changing Array Element</button>
+        <button onclick="array9_fun()">Accessing the Last Array Element</button>
+        <button onclick="array10_fun()">push method</button>
+        <button id="btn" onclick="array10_1_fun() " style="display: none">
+          CLICK
+        </button>
+        <button onclick="array11_fun()">typeof operator</button>
+        <button onclick="array12_fun()">The isArray() Method</button>
+      </div>
+      <div class="output">
+        <h2 id="title"></h2>
+        <h3 id="output"></h3>
+      </div>
+    </div>
+  </body>
+</html>
