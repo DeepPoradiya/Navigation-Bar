@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo1"></p>
+    <button onclick="var_fun()">VAR</button>
+    <p id="demo2"></p>
+    <button onclick="let_fun()">LET</button>
+    <p id="demo3"></p>
+    <button onclick="const_fun()">CONST</button>
+  </body>
+</html>
+<script>
+    //var variable
+    //allow the same variable name and same value of same name variable
+  function var_fun() {
+    var a, b, c;
+    a = 10;
+    b = 20;
+    c = a + b;
+    document.getElementById("demo1").innerHTML = a + "+" + b + "=" + c;
+  }
+  //let variable
+  //let cannot be redeclared
+  //not allowed the same name variable
+  //allow the same
+  function let_fun() {
+    let x, y, z;
+    x = 10;
+    y = 20;
+    z = x + y;
+    document.getElementById("demo2").innerHTML = x + "+" + y + "=" + z;
+  }
+  //const variable
+  function const_fun() {
+    //const value cannot be changed
+    // const a, b, c; //call the undefine variable
+    const a = 10;
+   const b = 20;
+   const c = a + b;
+    document.getElementById("demo3").innerHTML = a + "+" + b + "=" + c;
+  }
+</script>

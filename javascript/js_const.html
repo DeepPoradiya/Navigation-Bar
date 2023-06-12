@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JAVASCRIPT CONST</h1>
+    <p id="demo"></p>
+    <h2>CREATE AN ARRAY</h2>
+    <p id="demo2"></p>
+    <h2>CREATE AN OBJECT</h2>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <button onclick="const_fun()"> CHANGED VALUE</button>
+  </body>
+</html>
+<script>
+  try {
+    const pi = 3.141592653589793;
+    pi = 3.14; //this will be given error
+  } catch (err) {
+    document.getElementById("demo").innerHTML = err;
+  }
+  //JavaScript const variables must be assigned a value when they are declared:
+  //const pi; // error
+  //const pi=10;
+
+  //create const array
+  const cars = ["honda", "toyota", "audi"];
+  //change the element
+  cars[0] = "BMW";
+  // add an element
+  cars.push("volvo");
+  //display the array
+  document.getElementById("demo2").innerHTML = cars;
+
+  //create object
+  function const_fun()
+  {
+  const student = { name: "deep", stream: "bca", year: "2023" };
+  student.name = "jay";
+  student.fees="12000";
+  document.getElementById("demo3").innerHTML = "ADD THE STUDENT FEES ="+student.fees; 
+  document.getElementById("demo4").innerHTML ="STUDENT NAME="+student.name; 
+
+}
+
+</script>
