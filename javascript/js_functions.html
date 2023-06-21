@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        border: 2px solid black;
+        height: auto;
+        width: 100%;
+      }
+      .btn {
+        border: 2px solid black;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+      }
+      button {
+        margin: 5px;
+        padding: 5px;
+        width: 40%;
+      }
+      .output {
+        font-size: 20px;
+        padding: 20px;
+      }
+    </style>
+    <script src="js_function.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn">
+        <h1>JavaScript Array Methods and Properties</h1>
+        <button onclick="at()">at() method</button>
+        <button onclick="concat()">concat() method</button>
+        <button onclick="copywithin()">copyWithin() method</button>
+        <button onclick="fill()">fill() method</button>
+        <button onclick="every()">every() method</button>
+        <button onclick="filter()">filter() method</button>
+        <button onclick="find()">find() method</button>
+        <button onclick="findindex()">findindex() method</button>
+
+
+      </div>
+      <div class="output">
+        <h1 id="title"></h1>
+        <h2 id="desc"></h2>
+        <h3 id="output"></h3>
+      </div>
+    </div>
+  </body>
+</html>
+
