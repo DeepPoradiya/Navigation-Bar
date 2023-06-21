@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js_arithmetic.js"></script>
+    <style>
+      .container {
+        display: flex;
+        border: 2px solid black;
+        height: auto;
+        width: 100%;
+      }
+      .btn {
+        border: 2px solid black;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      button {
+        margin: 5px;
+        padding: 5px;
+        width: 40%;
+      }
+      .output {
+        font-size: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn">
+        <h1>Arithmetic Operations</h1>
+        <button onclick="addition()">addition operator(+)</button>
+        <button onclick="subtraction()">subtraction operator(-)</button>
+        <button onclick="multiplication ()">multiplication  operator(*)</button>
+        <button onclick="division ()">divison  operator(/)</button>
+        <button onclick="moduler ()">moduler  operator(/)</button>
+      </div>
+      <div class="output">
+        <h1 id="title"></h1>
+        <h2 id="desc"></h2>
+        <h3 id="output"></h3>
+      </div>
+    </div>
+  </body>
+</html>
