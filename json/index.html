@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/ad8097f5fe.js" crossorigin="anonymous"></script>
+    <script src="json_script.js"></script>
+    <title>Product List</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      #productContainer {
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 30px;
+      }
+      .product-card {
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        width: 300px  ;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .title_price {
+        display: flex;
+        justify-content: space-between;
+      }
+      .title {
+        width: 80%;
+      }
+      .dis
+      {
+        padding: 20px;
+      }
+      .img img {
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+      }
+      .location {
+        border-bottom: 1px gray solid;
+        padding-bottom: 10px;
+        color: gray;
+        font-size: 14px;
+      }
+      .time
+      {
+        color: gray;
+      }
+      .time_rate {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+      }
+      .dis_image {
+        height: 200px;
+        width: 200px;
+      }
+      .price
+      {
+        border: 3px solid rgb(76, 158, 76);;
+        border-radius: 4px;
+        padding: 5px;
+        color: rgb(76, 158, 76);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="productContainer">
+    </div>
+  </body>
+</html>
+
