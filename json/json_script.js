@@ -3,11 +3,9 @@
 fetch("product.json")
   .then((response) => response.json())
   .then((data) => {
+
     var result = data.result;
     var productContainer = document.getElementById("productContainer");
-
-   
-
     result.forEach(function (product) {
         var ratestar="";
         var fillstar=product.property_reviews;
@@ -15,12 +13,12 @@ fetch("product.json")
     
         for(var i=0;i<fillstar;i++ )
         {
-            ratestar+='<i class="fa-solid fa-star" style="color: #eff226;"></i>';
+            ratestar+='<i class="fa-solid fa-star" style="color: orange;"></i>';
     
         }
         for(var i=0;i < empstar;i++ )
         {
-            ratestar+='<i class="fa-solid fa-star" style="color: #eff226;"></i>';
+            ratestar+='<i class="fa-regular fa-star" style="color: #808080;"></i>';
       
         }
         var date = new Date(product.createdAt);
@@ -38,7 +36,7 @@ fetch("product.json")
         <div class="location">${product.location}</div>
         <div class="time_rate">
           <div class="time">${date.toDateString()}</div>
-          <div class="rate">${fillstar}<i class="fa-solid fa-star" style="color: #eff226;"></i></div>
+          <div class="rate">${ratestar}</div>
         </div>
         </div>
       </div>  ` 

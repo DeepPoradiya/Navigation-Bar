@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/ad8097f5fe.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ad8097f5fe.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="json_script.js"></script>
     <title>Product List</title>
     <style>
@@ -18,22 +23,23 @@
       }
       body {
         font-family: "Poppins", sans-serif;
+        background-color: #f4f5f6;
+        width: fit-content;
       }
       #productContainer {
-        margin: 20px;
+        padding: 30px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 10px;
-        margin-top: 30px;
       }
       .product-card {
-        border: 1px solid #ccc;
         border-radius: 12px;
-        width: 300px  ;
+        width: 300px;
         height: auto;
         display: flex;
         flex-direction: column;
+        background-color: white;
       }
       .title_price {
         display: flex;
@@ -42,8 +48,7 @@
       .title {
         width: 80%;
       }
-      .dis
-      {
+      .dis {
         padding: 20px;
       }
       .img img {
@@ -58,8 +63,7 @@
         color: gray;
         font-size: 14px;
       }
-      .time
-      {
+      .time {
         color: gray;
       }
       .time_rate {
@@ -71,19 +75,64 @@
         height: 200px;
         width: 200px;
       }
-      .price
-      {
-        border: 3px solid rgb(76, 158, 76);;
+      .price {
+        border: 3px solid rgb(76, 158, 76);
         border-radius: 4px;
         padding: 5px;
         color: rgb(76, 158, 76);
         font-weight: bold;
       }
+      /* .btn {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        border-bottom: 1px solid rgb(181, 177, 177);
+      }
+     button  {
+        background-color: rgb(150, 146, 146);
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+      }
+      .btn1:hover {
+        background-color: aqua;
+      } */
+      @media screen and (max-width: 400px) {
+        #productContainer
+        {
+          display: grid;
+          grid-template-columns: 1fr;
+          place-items: center;
+        }
+      }
+      @media screen and (min-width: 400px) and (max-width:700px) {
+        #productContainer
+        {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          place-items: center;
+        }
+      }
+      @media screen and (min-width: 700px) and (max-width:1000px) {
+        #productContainer
+        {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          place-items: center;
+        }
+      }
     </style>
   </head>
   <body>
-    <div id="productContainer">
-    </div>
+    <!-- <div class="btn">
+      <button id="bnt1" >ALL CArd</button>
+      <button id="bnt2" >good CArd</button>
+      <button id="bnt3" >BAD CARD</button>
+    </div> -->
+    <div id="productContainer"></div>
   </body>
 </html>
 
