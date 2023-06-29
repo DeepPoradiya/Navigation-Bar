@@ -6,7 +6,43 @@ fetch("product.json")
 
     var result = data.result;
     var productContainer = document.getElementById("productContainer");
-    result.forEach(function (product) {
+  
+    var countDisplay = document.getElementById("all_cards");
+    var approve = result.filter(function (product) {
+      return product.status === "approved";
+    });
+    countDisplay.innerHTML = `Approve Status: ${approve.length}`;
+    countDisplay.addEventListener("click", function () {
+      renderProductCards(approve);
+    });
+
+    // Only Show Reviews
+    var clickReviews = document.getElementById("good_reviews");
+    var emptyReviews = result.filter(function (product) {
+      return product.status === "pending";
+    });
+    clickReviews.innerHTML = `Pending status: ${emptyReviews.length}`;
+    clickReviews.addEventListener("click", function () {
+      renderProductCards(emptyReviews);
+    });
+    // Only Show NoReviews
+    var clickShowBadReview = document.getElementById("bad_reviews");
+    var badReviews = result.filter(function (product) {
+      return product.status === "decline";
+    });
+    clickShowBadReview.innerHTML = `Declinne status: ${badReviews.length}`;
+
+    clickShowBadReview.addEventListener("click", function () {
+      var noReviews = result.filter(function (product) {
+        return product.status === "decline";
+      });
+      renderProductCards(noReviews);
+    });
+
+    function renderProductCards(products) {
+      productContainer.innerHTML = "";
+
+    products.forEach(function (product) {
         var ratestar="";
         var fillstar=product.property_reviews;
         var empstar=5 - fillstar;
@@ -43,6 +79,8 @@ fetch("product.json")
 
       productContainer.appendChild(card);
     });
+  }
+  renderProductCards(result);
   })
   .catch((error) => console.log(error));
 
