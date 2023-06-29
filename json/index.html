@@ -2,7 +2,6 @@
 <html>
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,12 +23,11 @@
       body {
         font-family: "Poppins", sans-serif;
         background-color: #f4f5f6;
-        width: fit-content;
       }
       #productContainer {
         padding: 30px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
       }
@@ -82,56 +80,40 @@
         color: rgb(76, 158, 76);
         font-weight: bold;
       }
-      /* .btn {
+      .btn {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding: 20px;
         border-bottom: 1px solid rgb(181, 177, 177);
       }
      button  {
-        background-color: rgb(150, 146, 146);
+        background-color: rgb(9, 9, 9);
         padding: 10px;
-        border: none;
         border-radius: 20px;
         font-weight: bold;
         color: white;
         cursor: pointer;
       }
-      .btn1:hover {
-        background-color: aqua;
-      } */
-      @media screen and (max-width: 400px) {
-        #productContainer
-        {
-          display: grid;
-          grid-template-columns: 1fr;
-          place-items: center;
-        }
-      }
-      @media screen and (min-width: 400px) and (max-width:700px) {
-        #productContainer
-        {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          place-items: center;
-        }
-      }
-      @media screen and (min-width: 700px) and (max-width:1000px) {
-        #productContainer
-        {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          place-items: center;
-        }
+      
+       @media screen and (max-width: 450px) {
+          .btn
+          {
+            display: flex;
+            flex-direction: column;
+          }
+          .btns
+          {
+           margin: 10px;
+          }
       }
     </style>
   </head>
   <body>
-    <!-- <div class="btn">
-      <button id="bnt1" >ALL CArd</button>
-      <button id="bnt2" >good CArd</button>
-      <button id="bnt3" >BAD CARD</button>
-    </div> -->
+    <div class="btn">
+      <button class="btns" id="all_cards"></button>
+      <button class="btns" id="good_reviews"></button>
+      <button class="btns" id="bad_reviews"></button>
+    </div>
     <div id="productContainer"></div>
   </body>
 </html>
