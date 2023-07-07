@@ -25,40 +25,43 @@
     />
   </head>
   <body>
-    <div class="container-fluid p-0 food_bg">
-      <div class="py-3 d-flex justify-content-between  align-items-baseline">
-        <h1 class="t_col"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+    <div class="container-fluid food_bg p-0">
+      <div class="mx-5 py-3 d-flex justify-content-between align-items-center">
         <div>
-          <ul class="nav_ul d-flex justify-content-center align-items-center list-unstyled">
-            <li>
-              <a href="#">HOME</a>
+          <h1 class="t_col"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+        </div>
+        <div>
+          <ul class="nav nav_ul">
+            <li class="nav-item">
+              <a class="nav-link link-warning active" href="#">HOME</a>
             </li>
-            <li>
-              <a href="#">ABOUT</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
             </li>
-            <li>
-              <a href="#">SERVICE</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICE</a>
             </li>
-            <li>
-              <a href="#">MENU</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MENU</a>
             </li>
-            <li>
-              <a href="#"> PAGES </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+              >
+                PAGES
+              </a>
+              <ul class="dropdown-menu sub_menu">
+                <li><a class="dropdown-item">Page 1</a></li>
+                <li><a class="dropdown-item" href="#">Page 2</a></li>
+                <li><a class="dropdown-item" href="#">Page 3</a></li>
               </ul>
             </li>
-            <li>
-              <a href="#"> CONTACT</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> CONTACT</a>
             </li>
-            <li>
+            <li class="nav-item">
               <button
                 class="text-white border border-0 px-3 py-2 bg_col"
                 type="submit"
@@ -67,6 +70,27 @@
               </button>
             </li>
           </ul>
+        </div>
+      </div>
+      <div class="container-fluid row d-flex align-items-center">
+        <div class="col-6 text-white text_h1_p">
+          <h1 class="display-1 fw-bold">Enjoy Your Dilicious Meal</h1>
+          <p>
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+            lorem sit clita duo justo magna dolore erat amet
+          </p>
+          <button class="border border-0 rounded-1 text-white bg_col px-5 py-3">
+            BOOK A TABLE
+          </button>
+        </div>
+        <div class="pizza_logo col-6">
+          <img
+            src="BOOTSTRAP-TASK\hero-section\hero.png"
+            alt="pizza"
+            height="auto"
+            width="100%"
+          />
         </div>
       </div>
     </div>
