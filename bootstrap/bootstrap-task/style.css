@@ -29,14 +29,7 @@
     color: black;
     font-weight: 500;
 }
-.pizza_logo
+.con_bg2
 {
-    animation-name: rotate_img;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-@keyframes rotate_img {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    background-color: #ffffff;
 }
