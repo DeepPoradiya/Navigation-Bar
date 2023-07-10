@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ad8097f5fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="json_script.js"></script>
+    <title>Product List</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f5f6;
+      }
+      #productContainer {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .product-card {
+        border-radius: 12px;
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+      }
+      .title_price {
+        display: flex;
+        justify-content: space-between;
+      }
+      .title {
+        width: 80%;
+      }
+      .dis {
+        padding: 20px;
+      }
+      .img img {
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+      }
+      .location {
+        border-bottom: 1px gray solid;
+        padding-bottom: 10px;
+        color: gray;
+        font-size: 14px;
+      }
+      .time {
+        color: gray;
+      }
+      .time_rate {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+      }
+      .dis_image {
+        height: 200px;
+        width: 200px;
+      }
+      .price {
+        border: 3px solid rgb(76, 158, 76);
+        border-radius: 4px;
+        padding: 5px;
+        color: rgb(76, 158, 76);
+        font-weight: bold;
+      }
+      .btn {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        border-bottom: 1px solid rgb(181, 177, 177);
+      }
+     button  {
+        background-color: rgb(9, 9, 9);
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+      }
+      
+       @media screen and (max-width: 450px) {
+          .btn
+          {
+            display: flex;
+            flex-direction: column;
+          }
+          .btns
+          {
+           margin: 10px;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn">
+      <button class="btns" id="defaults"></button>
+      <button class="btns" id="approved"></button>
+      <button class="btns" id="good_reviews"></button>
+      <button class="btns" id="bad_reviews"></button>
+    </div>
+    <div id="productContainer"></div>
+  </body>
+</html>
+
