@@ -1,8 +1,12 @@
+@import url(/BOOTSTRAP-TASK/SecondaRound-Medium/style.css);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Seconda Round';
+
 }
+
 .food_bg{
     background-image:linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url("./BOOTSTRAP-TASK/hero-section/bg-hero.jpg");
     background-repeat: no-repeat;
@@ -29,14 +33,7 @@
     color: black;
     font-weight: 500;
 }
-.pizza_logo
+.con_bg2
 {
-    animation-name: rotate_img;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-@keyframes rotate_img {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    background-color: #ffffff;
 }
