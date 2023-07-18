@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container bg-warning-subtle">
+      <h1 class="text-center fw-bold text-danger">Dropdown</h1>
+
+      <div class="container">
+        <h1 class="fw-bold text-danger">Basic Dropdown</h1>
+        <button
+          type="button"
+          class="btn btn-success dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          SELECT YOUR CAR
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">BMW</a></li>
+          <li><a class="dropdown-item" href="#">AUDI</a></li>
+          <li><a class="dropdown-item" href="#">FORD</a></li>
+        </ul>
+      </div>
+
+      <div class="container mt-3">
+        <h1 class="fw-bold text-danger">Divider Dropdown</h1>
+        <button
+          type="button"
+          class="btn btn-success dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          SELECT YOUR CAR & BIKE
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">BMW</a></li>
+          <li><a class="dropdown-item" href="#">AUDI</a></li>
+          <li><a class="dropdown-item" href="#">FORD</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">SUZIKI</a></li>
+          <li><a class="dropdown-item" href="#">HONDA</a></li>
+          <li><a class="dropdown-item" href="#">KAWASKI</a></li>
+        </ul>
+      </div>
+
+      <div class="container mt-3">
+        <h1 class="fw-bold text-danger">Header Dropdown</h1>
+        <button
+          type="button"
+          class="btn btn-success dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          SELECT YOUR CAR & BIKE
+        </button>
+        <ul class="dropdown-menu">
+          <li><h5 class="dropdown-header" href="#">CARS</h5></li>
+          <li><a class="dropdown-item" href="#">BMW</a></li>
+          <li><a class="dropdown-item" href="#">AUDI</a></li>
+          <li><a class="dropdown-item" href="#">FORD</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><h5 class="dropdown-header" href="#">BIKES</h5></li>
+          <li><a class="dropdown-item" href="#">SUZIKI</a></li>
+          <li><a class="dropdown-item" href="#">HONDA</a></li>
+          <li><a class="dropdown-item" href="#">KAWASKI</a></li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <h1 class="fw-bold text-danger">Active/Disable Dropdown</h1>
+        <button
+          type="button"
+          class="btn btn-success dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          SELECT YOUR CAR
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item active" href="#">BMW</a></li>
+          <li><a class="dropdown-item" href="#">AUDI</a></li>
+          <li><a class="dropdown-item disabled" href="#">FORD</a></li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <h1 class="fw-bold text-danger">Dropdown Position</h1>
+        <hr />
+        <h1 class="fw-bold text-danger">Position End</h1>
+
+        <div class="dropdown dropend">
+          <button
+            type="button"
+            class="btn btn-success dropdown-toggle"
+            data-bs-toggle="dropdown"
+          >
+            Dropend
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item active" href="#">Active</a></li>
+            <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+          </ul>
+        </div>
+        <hr />
+        <h1 class="fw-bold text-danger">Position Start</h1>
+        <div class="dropdown dropstart text-end">
+          <button
+            type="button"
+            class="btn btn-success dropdown-toggle"
+            data-bs-toggle="dropdown"
+          >
+            Dropstrat
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item active" href="#">Active</a></li>
+            <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1 class="fw-bold text-danger">Dropdown Menu Right</h1>
+        <div class="dropdown dropdown-menu-end">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+              Wide dropdown button to demonstrate this example
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Link 1</a></li>
+              <li><a class="dropdown-item" href="#">Link 2</a></li>
+              <li><a class="dropdown-item" href="#">Link 3</a></li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="container">
+        <h1 class="fw-bold text-danger"> DropUp</h1>
+        <div class="dropdown dropup">
+        <button
+          type="button"
+          class="btn btn-success dropdown-toggle "
+          data-bs-toggle="dropdown"
+        >
+          SELECT YOUR CAR
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">BMW</a></li>
+          <li><a class="dropdown-item" href="#">AUDI</a></li>
+          <li><a class="dropdown-item" href="#">FORD</a></li>
+        </ul>
+    </div>
+      </div>
+
+    </div>
+  </body>
+</html>
