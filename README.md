@@ -1,5 +1,5 @@
 Live URL Link: https://deepporadiya.github.io/tfz/bootstrap/index.html
 
-- Task :Bootstrap 5 Forms
+- Task :Bootstrap template
 
-- Topic : webforms,utilities(aspect ratio),form validation example
+- Topic : half landing page create using with button,navbar
