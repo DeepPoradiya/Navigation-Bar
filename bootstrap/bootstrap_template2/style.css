@@ -1,0 +1,30 @@
+@media screen and (max-width:768px) {
+    .rel
+    {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        padding-top: 3cm;
+        text-align: center;
+
+    }
+    .main_h1 h1
+    {
+        font-size:1rem;
+    }
+    .ab
+    {
+        position: absolute;
+    }
+}
+.main_h1 h1
+{
+    font-size:2cm;
+    font-weight: bold;
+    
+}
+.carousel-item  .container-fluid
+{
+    height: 50rem;
+}
