@@ -18,17 +18,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-fluid bg-black cont" style="height: 100vh">
+    <div class="container-fluid bg-black cont">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand fw-bolder text-white fs-4" href="#">CLARK </a>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-black">
+          <a
+            class="navbar-brand text-white fs-4"
+            href="#"
+            style="font-weight: 900"
+            >CLARK
+          </a>
           <button
-            class="navbar-toggler"
-            type="button"
+            class="navbar-toggler border-0"
+            type="button "
             data-bs-target="#demo"
             data-bs-toggle="collapse"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span> <span>MENU</span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="demo">
             <ul
@@ -71,23 +76,21 @@
 
           <!-- The slideshow/carousel -->
           <div class="carousel-inner">
-            <div class="carousel-item active ">
-              <div class="container-fluid p-0  main_h1 " >
-                <div class="row">
+            <div class="carousel-item active">
+              <div class="container-fluid p-0 main_h1">
+                <div class="row cls1">
                   <div
-                    class="col-12 col-md-6 d-flex flex-column justify-content-center rel"
+                    class="col-12 col-md-6 d-flex flex-column justify-content-center ab"
                   >
                     <h6 class="fw-bold text-warning">HELLO!</h6>
-                    <h1
-                      class="text-white "
-                      style="font-size: 2cm; font-weight: bold"
-                    >
+                    <h1 class="text-white">
                       I'm a <span class="text-warning">Clark Thompson</span>
                     </h1>
                     <h2 class="text-white mb-4">A Freelance Web Designer</h2>
-                    <span>  <button
+                    <span>
+                      <button
                         type="button"
-                        class="btn btn-warning rounded-5 py-2 px-3"
+                        class="rounded-5 py-2 px-3 btn btn-warning"
                       >
                         HIRE ME
                       </button>
@@ -96,31 +99,26 @@
                         class="btn border-white text-white rounded-5 py-2 px-3"
                       >
                         MY WORK
-                      </button></span>
+                      </button></span
+                    >
                   </div>
-                  <div class="col-12 col-md-6 ab">
-                    <img
-                      src="images\bg_1.png"
-                      alt=""
-                      class="d-block"
-                      style="width: 100%"
-                    />
-                  </div>
+                  <div class="col-12 col-md-6 rel img1"></div>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="container-fluid p-0  main_h1 ">
-                <div class="row">
+              <div class="container-fluid p-0 main_h1">
+                <div class="row cls1">
                   <div
-                    class="col-12 col-md-6 d-flex flex-column justify-content-center rel"
+                    class="col-12 col-md-6 d-flex flex-column justify-content-center ab"
                   >
                     <h6 class="fw-bold text-warning">HELLO!</h6>
-                    <h1 class="text-white ">
+                    <h1 class="text-white">
                       I'm a <span class="text-warning">Web Designer</span>Based
                       in London
                     </h1>
-                    <span>                    <button
+                    <span>
+                      <button
                         type="button"
                         class="btn btn-warning rounded-5 py-2 px-3"
                       >
@@ -131,19 +129,56 @@
                         class="btn border-white text-white rounded-5 py-2 px-3"
                       >
                         MY WORK
-                      </button></span>
+                      </button></span
+                    >
                   </div>
-                  <div class="col-12 col-md-6 ab">
-                    <img
-                      src="images\bg_2.png"
-                      alt=""
-                      class="d-block"
-                      style="width: 100%"
-                    />
-                  </div>
+                  <div class="col-12 col-md-6 rel img2"></div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-5 d-md-block d-none">
+            <img src="./images/bg_1.png" alt="img1" width="100%" />
+          </div>
+          <div
+            class="col-md-7 col-12 d-flex flex-column justify-content-center"
+          >
+            <div class="">
+              <!-- <h1 class="h1_ab display-2 fw-bold h1_ab h1_rel">ABOUT</h1> -->
+              <h1 class="fw-bold text-white display-5 h1_ab">About Me</h1>
+            </div>
+            <p class="text-secondary py-4">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </p>
+            <div class="row">
+              <div class="col-lg-3 col-4 text-white fw-bold">
+                <div>Name</div>
+                <div>Date of birth:</div>
+                <div>Address:</div>
+                <div>Zip code:</div>
+                <div>Email</div>
+                <div>Phone:</div>
+              </div>
+              <div class="col text-white-50">
+                <div>Clark Thompson</div>
+                <div>January 01, 1987</div>
+                <div>San Francisco CA 97987 USA</div>
+                <div>1000</div>
+                <div>clarkthomp@gmail.com</div>
+                <div>+1-2234-5678-9-0</div>
+              </div>
+            </div>
+            <p class="fs-4 text-white py-3">
+              <span class="text-warning">120</span> Project complete
+            </p>
+            <span>
+              <button class="py-3 px-3 rounded-5 btn_color">DOWNLOAD CV</button>
+            </span>
           </div>
         </div>
       </div>
