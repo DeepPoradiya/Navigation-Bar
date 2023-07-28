@@ -1,5 +1,5 @@
-Live URL Link: https://deepporadiya.github.io/tfz/resume/index.html
+Live URL Link: https://deepporadiya.github.io/tfz/resume/resume2.html
 
-- Task : Resume
+- Task : Resume 2
 
-- Topic :  Make Resume with responive & this resume use only html and css media query
+- Topic : Make Resume with responive & this resume use only html and css &  in css use grid , flex ,media query
