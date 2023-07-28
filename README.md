@@ -1,5 +1,5 @@
-Live URL Link: https://deepporadiya.github.io/tfz/bootstrap/index.html
+Live URL Link: https://deepporadiya.github.io/tfz/resume/index.html
 
-- Task :Bootstrap 5 Forms
+- Task : Resume
 
-- Topic : webforms,utilities(aspect ratio),form validation example
+- Topic :  Make Resume with responive & this resume use only html and css media query

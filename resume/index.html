@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ad8097f5fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        accent-color: #009688;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .maincontaner {
+        width: 100%;
+        display: grid;
+        place-items: center;
+      }
+
+      .body_con {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.5fr auto;
+        grid-template-rows: auto auto;
+      }
+      .box1 {
+        padding: 2rem;
+        background-color: #545454;
+        color: white;
+      }
+      .box-3 {
+        background-color: #545454;
+      }
+      .details {
+        padding: 10px 0;
+      }
+      .about_info {
+        padding: 2rem;
+      }
+      .about_info span {
+        border-bottom: 4px solid black;
+      }
+      .about_details1 {
+        padding: 1rem 0;
+      }
+      span {
+        border-bottom: 4px solid white;
+      }
+      .about_info p {
+        color: gray;
+      }
+      @media screen and (max-width: 768px) {
+        .body_con {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        .box3 {
+          grid-row: 1 / span 1;
+        }
+        .box-4 {
+          grid-row: 3 / span 1;
+        }
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="maincontaner">
+      <div class="body_con">
+        <div class="box box-3" style="padding: 0 30px">
+          <div class="img">
+            <img
+              src="./IMG_1422.jpg"
+              ;
+              alt="img"
+              height="inherit"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box box-4">
+          <div
+            class="about_details"
+            style="margin-bottom: 5.5rem; padding: 2rem"
+          >
+            <h2 style="font-size: 3rem; font-weight: 400">Deep Poradiya</h2>
+            <p style="color: gray; font-size: 24px; font-weight: bold">
+              Developer, Freelancer
+            </p>
+          </div>
+        </div>
+        <div class="box box1">
+          <div class="dp" style="padding: 0 20px">
+            <div class="contact_info">
+              <h2 class="details"><span>CONATCT</span></h2>
+              <div class="details">
+                <h4>Email</h4>
+                <p>deepporadiaya@gmail.com</p>
+              </div>
+              <div class="details">
+                <h4>Phone</h4>
+                <p>+916355668731</p>
+              </div>
+            </div>
+            <div class="personal_info">
+              <h2 class="details"><span>Personal </span>Details</h2>
+              <div class="details">
+                <h4>Date Of Birth</h4>
+                <p>22/06/2003</p>
+              </div>
+              <div class="details">
+                <h4>Address</h4>
+                <p>Balkrishna Society Khamdhrol Road Junagadh</p>
+              </div>
+              <div>
+                <h3>Residence</h3>
+                <p>Balkrishna Society block-9 Khamdhrol Road Junagadh </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box box2">
+          <div class="about_info">
+            <div class="about_details1">
+              <h2><span>About Me</span></h2>
+              <div class="about_details1">
+                <p>
+                  I am friendly, helpful, and polite, have I am friendly,
+                  helpful, and polite. I am punctual with an excellent
+                  attendance record. I am able to motivate and direct my talents
+                  and skills to meet objectives. I am outgoing and tactful, and
+                  able to listen effectively when solving problems
+                </p>
+              </div>
+            </div>
+            <div class="about_details1">
+              <h2><span>Experience</span></h2>
+              <div class="about_details1">
+                <p class="">SULOK DIGITAL</p>
+                <p>Developer</p>
+                <p>2018-2019</p>
+              </div>
+              <div class="">
+                <p class="">SULOK DIGITAL Pvt. Ltd.</p>
+                <p>Developer</p>
+                <p>2018-2019</p>
+              </div>
+            </div>
+            <div class="about_details1">
+              <h2><span>Education</span></h2>
+              <div class="about_details1">
+                <p>2013-2020</p>
+                <p>BCA</p>
+                <p>MCA</p>
+              </div>
+              <div class="about_details1">
+                <p>2018-2021</p>
+                <p style="font-size: 1rem">Bhakt Kavi Narsinh Mehta Univercity</p>
+                <p style="font-weight: 900">"Knowledge Is Power"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
