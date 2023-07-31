@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100%;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .subcontainer1 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        row-gap: 20px;
+      }
+
+      .box1 {
+        grid-column: 1 / span 2;
+        height: 200px;
+        background-color: hsla(0, 0%, 22%, 1);
+        color: white;
+      }
+      .box2 {
+        background-color: hsla(0, 0%, 22%, 1);
+        color: white;
+      }
+      .box3 {
+        margin-top: -13px;
+      }
+
+      .header h1 {
+        font-size: 40px;
+      }
+      .header p {
+        letter-spacing: 7px;
+        font-weight: bold;
+      }
+      .personal_info {
+        padding: 1rem;
+      }
+      .personal_info p,
+      .personal_info ul {
+        color: gray;
+      }
+      .border_paragraph {
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        padding: 10px 0;
+      }
+      .skills ul {
+        padding: 1rem;
+      }
+      .edu_p {
+        display: flex;
+      }
+      .body_edu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+      .bg_paragraph p {
+        text-align: center;
+        width: 7rem;
+        display: inline-block;
+        transform: rotate(-90deg);
+      }
+
+      .header {
+        display: flex;
+        justify-content: end;
+      }
+      .set_header {
+        width: 60%;
+      }
+      .edu_header span {
+        background-color: hsla(0, 0%, 22%, 1);
+        padding: 0.5rem 3rem;
+        color: white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      .achive {
+        padding: 0.5rem 2rem;
+      }
+      .txt_p {
+        background-color: hsla(0, 0%, 22%, 1);
+        color: white!important;
+      }
+      .logo img {
+        border-radius: 50%;
+        border: 8px solid white;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box2 {
+        position: relative;
+      }
+      .set_img {
+        position: absolute;
+      }
+      .personal_info {
+        position: absolute;
+        top: 7rem;
+      }
+      .box3 ul,
+      .box3 p {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="subcontainer1">
+        <div class="box1 box">
+          <div class="header">
+            <div class="set_header">
+              <h1>ESTELLE DARCY</h1>
+              <p>HIGH SCHOOL TEACHER</p>
+            </div>
+          </div>
+        </div>
+        <div class="box2 box">
+          <div class="logo">
+            <div class="set_img">
+              <img src="./download.png" alt="" height="200px" width="200px" />
+            </div>
+          </div>
+          <div class="personal_info">
+            <div class="profile">
+              <h4 class="border_paragraph">PERSONAL PROFILE</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                saepe quae labore corporis repellendus modi optio dignissimos
+                unde neque? Minima eveniet dolores earum nam inventore labore
+                impedit ab voluptatibus ratione. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Voluptate ipsa hic aliquid laborum
+                dolor! Perferendis neque aspernatur doloribus consequuntur nemo
+                dolores animi adipisci, ab voluptatum error, eligendi tenetur
+                eaque quidem.
+              </p>
+            </div>
+            <div class="skills">
+              <h4 class="border_paragraph">SKILLS</h4>
+              <ul>
+                <li>Critical thinking skills.</li>
+                <li>Patience.</li>
+                <li>Communication skills.</li>
+                <li>Organisational skills.</li>
+                <li>Capacity for teamwork.</li>
+                <li>Leadership skills.</li>
+                <li>Creative thinking abilities.</li>
+              </ul>
+            </div>
+            <div class="contact">
+              <h4 class="border_paragraph">CONTACT INFORMATION</h4>
+              <p>+917679985444</p>
+              <p>LONDON</p>
+              <p>demo@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="box3 box">
+          <div class="education_bg">
+            <div class="edu">
+              <div class="edu_header">
+                <h4><span>EDUCATION BACKGROUND</span></h4>
+              </div>
+              <div class="edu_p">
+                <div class="body_edu">
+                  <div class="bg_paragraph">
+                    <p class="txt_p">2019-2021</p>
+                  </div>
+                </div>
+                <div>
+                  <h4>Univercity Of Paucek Lage</h4>
+                  <p>Master's Degree in Education | october 2019-may-2021</p>
+                  <ul>
+                    <li>Lorem ipsum, dolor</li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="edu_p">
+                <div class="body_edu">
+                  <div class="bg_paragraph">
+                    <p class="txt_p">2019-2021</p>
+                  </div>
+                </div>
+                <div>
+                  <h4>Univercity Of Paucek Lage</h4>
+                  <p>Master's Degree in Education | october 2019-may-2021</p>
+                  <ul>
+                    <li>Lorem ipsum, dolor</li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="education_bg">
+            <div class="edu">
+              <div class="edu_header">
+                <h4><span>TEACHING EXPERIENCE</span></h4>
+              </div>
+              <div class="edu_p">
+                <div class="body_edu">
+                  <div class="bg_paragraph">
+                    <p class="txt_p">2019-Curerent</p>
+                  </div>
+                </div>
+                <div>
+                  <h4>High School Teacher Assistant</h4>
+                  <p>Master's Degree in Education | october 2019-may-2021</p>
+                  <ul>
+                    <li>Lorem ipsum, dolor</li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="edu_p">
+                <div class="body_edu">
+                  <div class="bg_paragraph">
+                    <p class="txt_p">2017</p>
+                  </div>
+                </div>
+                <div>
+                  <h4>High School Teacher Assistant(intern)</h4>
+                  <p>Master's Degree in Education | october 2019-may-2021</p>
+                  <ul>
+                    <li>Lorem ipsum, dolor</li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="education_bg">
+            <div class="edu">
+              <div class="edu_header">
+                <h4><span>ACHIVEMNETS</span></h4>
+              </div>
+              <div class="edu_p">
+                <div class="achive">
+                  <ul>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit.Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit.Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
