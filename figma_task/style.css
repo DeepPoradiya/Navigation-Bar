@@ -2,3 +2,16 @@
 {
     color: #000;
 }
+input[type="text"]
+{
+    background-color: #FAFAFA;
+    color: gray;
+}
+.main_con
+{
+    height: 100vh;
+}
+.second_con
+{
+    height: inherit;
+}

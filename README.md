@@ -1,5 +1,5 @@
-Live URL Link: https://deepporadiya.github.io/tfz/resume/resume3.html
+Live URL Link: https://deepporadiya.github.io/tfz/figma_task/index.html
 
-- Task : Resume 3
+- Task : figma Task
 
-- Topic : Make Resume  this resume use only html and css &  in css use grid , flex 
+- Topic : create a half first page using with navbar,grid,flex,buttons
