@@ -1,4 +1,4 @@
-Live URL Link: https://deepporadiya.github.io/tfz/resume/resume3.html
+Live URL Link: https://deepporadiya.github.io/tfz/figma_task/index.html
 
 - Task : figma Task
 
