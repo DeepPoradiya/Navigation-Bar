@@ -1,17 +1,37 @@
-.nav_a a
-{
+.nav_a a {
     color: #000;
 }
-input[type="text"]
-{
+
+input[type="text"] {
     background-color: #FAFAFA;
     color: gray;
 }
-.main_con
-{
+
+.main_con {
     height: 100vh;
 }
-.second_con
-{
+
+.second_con {
     height: inherit;
+}
+
+.btn_email {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (min-width:769px) {
+    .btn_email button {
+        padding: 20px 24px;
+    }
+
+    input[type="text"] {
+
+        padding: 20px 18px;
+    }
+}
+
+.title_h1 {
+    width: 90%;
+    word-wrap: break-word;
 }
