@@ -5,12 +5,20 @@
 input[type="text"] {
     background-color: #FAFAFA;
     color: gray;
+    border-radius: 37px;
 }
 
-.main_con {
-    height: 100vh;
+/* .main_con {
+    height: auto;
+} */
+.first_page
+{
+    height: 800px;
 }
-
+.nav_con
+{
+    margin-bottom: 5rem;
+}
 .second_con {
     height: inherit;
 }
@@ -20,18 +28,75 @@ input[type="text"] {
     gap: 10px;
 }
 
-@media screen and (min-width:769px) {
+.btn_email button {
+    border-radius: 70px;
+    background: #3461FF;
+    color: white;
+    border: none;
+}
+
+.btn_email button {
+    padding: 20px 24px;
+}
+
+input[type="text"] {
+
+    padding: 20px 18px;
+}
+
+@media screen and (max-width:768px) {
     .btn_email button {
-        padding: 20px 24px;
+        padding: 10px 4px;
     }
 
     input[type="text"] {
 
-        padding: 20px 18px;
+        padding: 10px 9px;
     }
 }
 
 .title_h1 {
-    width: 90%;
+    width: 70%;
     word-wrap: break-word;
+}
+
+.pencil_img {
+    border-radius: 119.5px;
+    background: #3461FF;
+}
+
+.king_img {
+    border-radius: 119.5px;
+    background: #F1F4FF;
+}
+
+.laptop_img {
+    border-radius: 119.5px;
+    background: #E0FF22;
+}
+
+.position_rel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticker_rel {
+    position: relative;
+}
+
+.sticker_ab {
+    position: absolute;
+
+}
+.sticker_ab2 {
+    transform: translate(10%, -50%);
+    position: absolute;
+    left: 40%;    
+}
+.sticker_ab1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-10%, -50%);
+
 }
