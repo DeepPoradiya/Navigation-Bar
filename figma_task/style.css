@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .main_con {
@@ -161,7 +160,14 @@ input[type="text"] {
         width: 60% !important;
         word-break: break-all;
     }
-
+    .company_des
+    {
+        width: 30% !important;
+    }
+    .company_work
+    {
+        width: 20% !important;
+    }
 }
 
 .pencil_img {
