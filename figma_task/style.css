@@ -1,4 +1,230 @@
-.nav_a a
-{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_con {
+    width: 100%;
+}
+
+.nav_a a {
     color: #000;
+}
+
+input[type="text"] {
+    background-color: #FAFAFA;
+    color: gray;
+    border-radius: 37px;
+}
+
+.second_con {
+    height: inherit;
+    padding: 5rem 0 0 0;
+}
+
+.btn_email {
+    display: flex;
+    gap: 10px;
+}
+
+.btn_email button {
+    border-radius: 70px;
+    background: #3461FF;
+    color: white;
+    border: none;
+}
+
+.btn_email button {
+    padding: 20px 24px;
+}
+
+input[type="text"] {
+
+    padding: 20px 18px;
+}
+
+@media screen and (max-width:426px) {
+    .btn_email button {
+        padding: 10px 5px;
+    }
+
+    .title_h1,
+    .des_paragraph {
+        text-align: center;
+    }
+
+    #left_side {
+        margin-top: 4rem;
+        order: 2;
+    }
+
+    #right_side {
+        order: 1;
+    }
+
+    .btn_email {
+        display: flex;
+        justify-content: center;
+    }
+
+    .position_rel img {
+        height: 60px;
+        width: auto;
+    }
+
+    .third_row_ab .third_row_ab1,
+    .sticker_ab .sticker_ab2 {
+        height: 50px;
+    }
+
+    .sticker_ab .sticker_ab1,
+    .third_row_ab .third_row_ab2 {
+        height: 30px;
+    }
+
+
+    .sticker_ab1 {
+        position: absolute;
+        left: 50%;
+        transform: translate(20%, -50%) !important;
+    }
+
+    .sticker_ab2 {
+        transform: translate(25%, -50%) !important;
+        position: absolute;
+        left: 40%;
+    }
+
+    .third_row_ab2 {
+        position: absolute;
+        inset: 0.8rem 1rem !important;
+    }
+
+    .third_row_ab {
+        position: absolute;
+        left: 25%;
+        top: -2rem !important;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+
+    .third_row_ab .third_row_ab1,
+    .sticker_ab .sticker_ab2 {
+        height: 45px;
+    }
+
+    .third_row_ab2 {
+        position: absolute;
+        inset: 0.5rem 1rem !important;
+    }
+
+}
+
+@media screen and (max-width:424px) and (min-width:380px) {
+
+    .third_row_ab .third_row_ab1,
+    .sticker_ab .sticker_ab2 {
+        height: 55px;
+    }
+
+    .sticker_ab .sticker_ab1,
+    .third_row_ab .third_row_ab2 {
+        height: 40px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .btn_email button {
+        padding: 10px 4px;
+    }
+
+    input[type="text"] {
+
+        padding: 10px 9px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .title_h1 {
+        width: 90% !important;
+        word-break: keep-all;
+    }
+
+    .des_paragraph {
+        color: rgba(0, 0, 0, 0.60);
+
+        width: 60% !important;
+        word-break: break-all;
+    }
+    .company_des
+    {
+        width: 30% !important;
+    }
+    .company_work
+    {
+        width: 20% !important;
+    }
+}
+
+.pencil_img {
+    border-radius: 119.5px;
+    background: #3461FF;
+}
+
+.king_img {
+    border-radius: 119.5px;
+    background: #F1F4FF;
+}
+
+.laptop_img {
+    border-radius: 119.5px;
+    background: #E0FF22;
+}
+
+.position_rel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticker_rel {
+    position: relative;
+}
+
+.sticker_ab {
+    position: absolute;
+
+}
+
+.sticker_ab2 {
+    transform: translate(10%, -50%);
+    position: absolute;
+    left: 40%;
+}
+
+.sticker_ab1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-10%, -50%);
+
+}
+
+.third_row_rel {
+    position: relative;
+}
+
+.third_row_ab {
+    position: absolute;
+    left: 25%;
+    top: -4rem
+}
+
+.third_row_ab2 {
+    position: absolute;
+    inset: 1rem 3rem;
+
 }

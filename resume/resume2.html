@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #404040;
+      }
+
+      .subcontainer {
+        width: 100%;
+        height: 90vh;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1.5fr 0.5fr;
+        grid-template-rows: 1fr 2fr 1fr 1fr;
+      }
+      .exp {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto auto;
+      }
+      .box1 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+      }
+      .box2 {
+        grid-row: 2 / span 1;
+      }
+      .box3 {
+        grid-column: 1 / span 1;
+      }
+      .box3 .exp {
+        color: white;
+      }
+      .box4 {
+        grid-row: 2 / span 2;
+        grid-column: 2 / span 1;
+      }
+      .box5 {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+      }
+      .box6 {
+        grid-row: 1 / span 1;
+      }
+
+      .box {
+        height: auto;
+      }
+
+      .text_name h1 {
+        color: #e7cd41;
+      }
+      .text_name p {
+        color: white;
+        font-size: 20px;
+      }
+      .box:not(.box1) {
+        background-color: #1f1f1f;
+      }
+      img {
+        object-fit: cover;
+      }
+      .deg {
+        color: #e7cd41;
+      }
+      img {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      .box2,
+      .box3,
+      .box7 {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      .box4,
+      .box5 {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      .paragraph {
+        padding: 5px 0;
+      }
+      progress {
+        accent-color: yellow;
+      }
+      .text_name {
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+      }
+      .box2 h2 span,
+      .box3 h2 span,
+      .box7 h2 span {
+        background-color: white;
+        padding: 0 3rem;
+        border-top-right-radius: 10px;
+      }
+      .box4 h2 span,
+      .box5 h2 span {
+        background-color: white;
+        padding: 0 3rem;
+        border-top-left-radius: 10px;
+      }
+      .box4 h2,
+      .box5 h2 {
+        text-align: end;
+      }
+      .edu_cont {
+        text-align: center;
+        color: white;
+      }
+      .lbl {
+        margin-left: 2rem;
+      }
+      .lbl_pro_color {
+        color: white;
+      }
+      @media screen and (max-width: 768px) {
+        .subcontainer {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto auto auto auto auto auto auto;
+        }
+        .box1 {
+          grid-row: 1 / span 1;
+          grid-column: 1 / span 1;
+        }
+        .box6 {
+          grid-row: 2 / span 1;
+          grid-column: 1 / span 1;
+        }
+        .box2 {
+          grid-row: 3 / span 1;
+          grid-column: 1 / span 1;
+        }
+        .box4 {
+          grid-row: 4 / span 1;
+          grid-column: 1 / span 1;
+        }
+        .box5 {
+          grid-row: 7 / span 1;
+          grid-column: 1 / span 1;
+        }
+        .box4 h2,
+        .box5 h2 {
+          text-align: start;
+        }
+        .box4 h2 span,
+        .box5 h2 span {
+          background-color: white;
+          padding: 0 3rem;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 0;
+        }
+        .paragraph,
+        .edu_cont {
+          text-align: start;
+          padding-left: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="subcontainer">
+        <div class="box1 box">
+          <img
+            src="./RealPlayerMeFeature.png"
+            alt="img"
+            height="inherit"
+            width="100%"
+          />
+        </div>
+        <div class="box2 box">
+          <h2>
+            <span> Profile </span>
+          </h2>
+          <p style="color: white; padding: 3rem">
+            <span style="color: #e7cd41"> Lorem ipsum</span> dolor sit, amet
+            consectetur adipisicing elit. Molestias repellat aperiam totam quasi
+            et consequuntur voluptatum in, explicabo iure suscipit natus maiores
+            voluptate perspiciatis cumque officia. Aliquam consectetur a
+            repellat!
+          </p>
+        </div>
+        <div class="box3 box">
+          <h2>
+            <span> Experience </span>
+          </h2>
+          <div class="exp" style="padding: 3rem">
+            <div class="content">
+              <p>2018-2019</p>
+              <p>Company Name</p>
+            </div>
+            <div>
+              <p class="deg">Lorem Input</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis maxime sint, commodi tenetur ea doloremque culpa vero
+                repellat nam, doloribus aliquid eos veniam nisi ipsam voluptatem
+                vel nesciunt numquam consequuntur.
+              </p>
+            </div>
+            <div class="content">
+              <p>2018-2019</p>
+              <p>Company Name</p>
+            </div>
+            <div>
+              <p class="deg">Lorem Input</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis maxime sint, commodi tenetur ea doloremque culpa vero
+                repellat nam, doloribus aliquid eos veniam nisi ipsam voluptatem
+                vel nesciunt numquam consequuntur.
+              </p>
+            </div>
+            <div class="content">
+              <p>2018-2019</p>
+              <p>Company Name</p>
+            </div>
+            <div>
+              <p class="deg">Lorem Input</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis maxime sint, commodi tenetur ea doloremque culpa vero
+                repellat nam, doloribus aliquid eos veniam nisi ipsam voluptatem
+                vel nesciunt numquam consequuntur.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box4 box">
+          <h2>
+            <span> Education </span>
+          </h2>
+          <div class="edu_cont">
+            <div class="paragraph">
+              <p>2019-2021</p>
+              <p class="deg">Degree Name</p>
+              <p>Univercity Name</p>
+            </div>
+            <div class="paragraph">
+              <p>2019-2021</p>
+              <p class="deg">Degree Name</p>
+              <p>Univercity Name</p>
+            </div>
+            <div class="paragraph">
+              <p>2019-2021</p>
+              <p class="deg">Degree Name</p>
+              <p>Univercity Name</p>
+            </div>
+            <div class="paragraph">
+              <p>2019-2021</p>
+              <p class="deg">Degree Name</p>
+              <p>Univercity Name</p>
+            </div>
+            <div class="paragraph">
+              <p>2019-2021</p>
+              <p class="deg">Degree Name</p>
+              <p>Univercity Name</p>
+            </div>
+          </div>
+        </div>
+        <div class="box5 box">
+          <h2>
+            <span> Contact </span>
+          </h2>
+          <div class="edu_cont">
+            <div>
+              <p class="deg">Phone</p>
+              <p>+919020654778</p>
+            </div>
+            <div>
+              <p class="deg">Email</p>
+              <p>unkwon@gmail.com</p>
+            </div>
+            <div>
+              <p class="deg">Address</p>
+              <p>BCA</p>
+            </div>
+          </div>
+        </div>
+        <div class="box6 box">
+          <div class="text_name">
+            <h1><span style="font-weight: 900">LUCKY</span> WILLIAM</h1>
+            <p>Graphic Designer</p>
+          </div>
+        </div>
+        <div class="box box7">
+          <h2>
+            <span> Skills </span>
+          </h2>
+          <div style="display: flex; padding: 3rem">
+            <div>
+              <div class="lbl_pro_color">
+                <label for="file" lbl>Your Skills</label>
+                <progress id="file" value="89" max="100">32%</progress>
+              </div>
+              <div class="lbl_pro_color">
+                <label for="file" lbl>Your Skills</label>
+                <progress id="file" value="33" max="100">32%</progress>
+              </div>
+              <div class="lbl_pro_color">
+                <label for="file" lbl>Your Skills</label>
+                <progress id="file" value="35" max="100">32%</progress>
+              </div>
+            </div>
+            <div style="margin-left: 2rem">
+              <div class="lbl_pro_color">
+                <label for="file" lbl>Your Skills</label>
+                <progress id="file" value="42" max="100">32%</progress>
+              </div>
+              <div class="lbl_pro_color">
+                <label for="file" lbl>Your Skills</label>
+                <progress id="file" value="82" max="100">32%</progress>
+              </div>
+              <div class="lbl_pro_color">
+                <label for="file" lbl>Your Skills</label>
+                <progress id="file" value="67" max="100">32%</progress>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,5 +1,5 @@
-Live URL Link: https://deepporadiya.github.io/tfz/resume/index.html
+Live URL Link: https://deepporadiya.github.io/tfz/figma_task/index.html
 
-- Task : Resume
+- Task : figma Task
 
-- Topic :  Make Resume with responive & this resume use only html and css media query
+- Topic : in first page modify the code and make a mobile screen using with media query,position  and some changes in desktop screen
