@@ -160,14 +160,20 @@ input[type="text"] {
         width: 60% !important;
         word-break: break-all;
     }
-    .company_des
-    {
-        width: 30% !important;
-    }
-    .company_work
-    {
-        width: 20% !important;
-    }
+    .con_3
+{
+    padding-left:  7rem !important;
+}
+
+}
+
+.work_bg {
+    background-color: #FAFAFA;
+    padding: 3rem 0;
+}
+
+.work_bg img {
+    mix-blend-mode: darken;
 }
 
 .pencil_img {
