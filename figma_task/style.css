@@ -160,10 +160,10 @@ input[type="text"] {
         width: 60% !important;
         word-break: break-all;
     }
-    .con_3
-{
-    padding-left:  7rem !important;
-}
+
+    .con_3 {
+        padding-left: 7rem !important;
+    }
 
 }
 
@@ -233,4 +233,13 @@ input[type="text"] {
     position: absolute;
     inset: 1rem 3rem;
 
+}
+
+.hover_card .card {
+    border-radius: 30px;
+    background-color: #F8F9FF;
+}
+
+.hover_card .card:hover {
+    background: #3461FF;
 }

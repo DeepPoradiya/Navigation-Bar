@@ -2,4 +2,4 @@ Live URL Link: https://deepporadiya.github.io/tfz/figma_task/index.html
 
 - Task : figma Task
 
-- Topic : create a second and third page using with flex,grid and responsive  mobile screen and desktop screen 
+- Topic : create a fourth page using with flex,grid also responsive in mobile screen and laptop screen 
