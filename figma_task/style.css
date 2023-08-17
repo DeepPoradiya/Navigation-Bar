@@ -48,12 +48,6 @@ input[type="text"] {
     .btn_email button {
         padding: 10px 5px;
     }
-
-    .title_h1,
-    .des_paragraph {
-        text-align: center;
-    }
-
     #left_side {
         margin-top: 4rem;
         order: 2;
@@ -136,6 +130,137 @@ input[type="text"] {
     }
 
 }
+@media screen and (min-width:424px) and (max-width:500px) {
+
+    .third_row_ab .third_row_ab1,
+    .sticker_ab .sticker_ab2 {
+        height: 70px;
+    }
+    .third_row_ab2 {
+        position: absolute !important;
+        inset: 1rem 2rem !important;
+    }
+    .third_row_ab {
+        position: absolute;
+        left: 25% !important;
+        top: -3rem  !important;
+    }
+    .sticker_ab1 {
+        position: absolute ;
+        left: 50% !important;
+        transform: translate(25%, -50%) !important;
+    }
+    .sticker_ab2 {
+        transform: translate(10%, -50%) !important;
+        position: absolute;
+        left: 43% !important;
+    }
+    .sticker_ab .sticker_ab1,
+    .third_row_ab .third_row_ab2 {
+        height: 40px;
+    }
+
+}
+@media screen and (min-width:501px) and (max-width:767px) {
+
+    .third_row_ab .third_row_ab1,
+    .sticker_ab .sticker_ab2 {
+        height: 85px;
+    }
+    .third_row_ab2 {
+        position: absolute !important;
+        inset: 1rem 2rem !important;
+    }
+    .third_row_ab {
+        position: absolute;
+        left: 25% !important;
+        top: -3rem  !important;
+    }
+    .sticker_ab1 {
+        position: absolute ;
+        left: 50% !important;
+        transform: translate(25%, -50%) !important;
+    }
+    .sticker_ab2 {
+        transform: translate(10%, -50%) !important;
+        position: absolute;
+        left: 43% !important;
+    }
+    .sticker_ab .sticker_ab1,
+    .third_row_ab .third_row_ab2 {
+        height: 50px;
+    }
+
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    .third_row_ab .third_row_ab1,
+    .sticker_ab .sticker_ab2 {
+        height: 60px;
+    }
+    .third_row_ab2 {
+        position: absolute !important;
+        inset: 1rem 1.5rem !important;
+    }
+    .third_row_ab {
+        position: absolute;
+        left: 25% !important;
+        top: -3rem  !important;
+    }
+    .sticker_ab1 {
+        position: absolute ;
+        left: 50% !important;
+        transform: translate(25%, -50%) !important;
+    }
+    .sticker_ab2 {
+        transform: translate(10%, -50%) !important;
+        position: absolute;
+        left: 43% !important;
+    }
+    .sticker_ab .sticker_ab1,
+    .third_row_ab .third_row_ab2 {
+        height: 35px;
+    }
+    .btn_email button {
+        padding: 10px 4px;
+    }
+
+    input[type="text"] {
+
+        padding: 10px 9px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+    .third_row_ab .third_row_ab1,
+    .sticker_ab .sticker_ab2 {
+        height: 80px;
+    }
+    .third_row_ab2 {
+        position: absolute !important;
+        inset: 1rem 2rem !important;
+    }
+    .third_row_ab {
+        position: absolute;
+        left: 25% !important;
+        top: -3rem  !important;
+    }
+    .sticker_ab1 {
+        position: absolute ;
+        left: 50% !important;
+        transform: translate(25%, -50%) !important;
+    }
+    .sticker_ab2 {
+        transform: translate(10%, -50%) !important;
+        position: absolute;
+        left: 43% !important;
+    }
+    .sticker_ab .sticker_ab1,
+    .third_row_ab .third_row_ab2 {
+        height: 50px;
+    }
+
+}
 
 @media screen and (max-width:768px) {
     .btn_email button {
@@ -160,11 +285,6 @@ input[type="text"] {
         width: 60% !important;
         word-break: break-all;
     }
-
-    .con_3 {
-        padding-left: 7rem !important;
-    }
-
 }
 
 .work_bg {
@@ -242,4 +362,52 @@ input[type="text"] {
 
 .hover_card .card:hover {
     background: #3461FF;
+}
+@media screen and (min-width:1150px) {
+    .rounded_img img
+    {
+        height: 80px !important;
+    }
+    .rounded_img 
+    {
+        border-radius: 352px !important;
+        background: #e0ff22;
+        width: 352px !important;
+        height: 352px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media screen and (min-width:1151px) and (max-width:1200px) {
+    .rounded_img img
+    {
+        height: 80px !important;
+    }
+    .rounded_img 
+    {
+        border-radius: 352px !important;
+        background: #e0ff22;
+        width: 300px !important;
+        height: 300px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+.bg_rounded
+{
+    border-radius: 52px;
+    background: #232038;;
+}
+.last_con
+{
+    background-color: #FAFAFA;
+}
+.footer
+{
+    background: rgba(0, 0, 0, 0.80);
 }
