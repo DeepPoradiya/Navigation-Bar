@@ -16,9 +16,29 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/d59dff5dac.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Activate the first carousel item
+        $("#carouselExampleIndicators2 .carousel-item:first").addClass(
+          "active"
+        );
+
+        // Set carousel to show one image at a time
+        $("#carouselExampleIndicators2").carousel({
+          interval: false, // Disable automatic cycling
+        });
+      });
+    </script>
   </head>
-  <body>
-    <div class="container-fluid main_con">
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <div class="container-fluid main_con p-0">
       <div class="container-fluid first_page">
         <div class="container nav_con">
           <nav class="navbar navbar-expand-lg dark">
@@ -49,16 +69,16 @@
               <div class="collapse navbar-collapse mt-2" id="nav_ul">
                 <ul class="navbar-nav nav_a d-flex">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">How Its Works</a>
+                    <a class="nav-link" href="#section1">How Its Works</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Our Works</a>
+                    <a class="nav-link" href="#section2">Our Works</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link" href="#"> Pricing </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
+                    <a class="nav-link" href="#section4">About us</a>
                   </li>
                 </ul>
                 <button class="btn ms-auto btn-primary rounded-5">
@@ -68,21 +88,23 @@
             </div>
           </nav>
         </div>
-        <div class="container second_con">
+        <div class="container second_con mb-5">
           <div class="row">
             <div
               class="col-12 col-md-6 d-flex flex-column justify-content-center"
               id="left_side"
             >
-              <div class="title_h1">
-                <h1 class="display-1 fw-bold">We Take Care of Your Brand</h1>
-              </div>
-              <div class="des_paragraph">
-                <p class="text-capitalize">
-                  Use this section to describe your company and the products you
-                  offer. You could share your company’s story and details about
-                  why you are in business.
-                </p>
+              <div class="text-center text-md-start">
+                <div class="title_h1">
+                  <h1 class="display-1 fw-bold">We Take Care of Your Brand</h1>
+                </div>
+                <div class="des_paragraph">
+                  <p class="text-capitalize">
+                    Use this section to describe your company and the products
+                    you offer. You could share your company’s story and details
+                    about why you are in business.
+                  </p>
+                </div>
               </div>
 
               <div class="btn_email row">
@@ -94,7 +116,10 @@
                 <button class="col-3">Lets Talk</button>
               </div>
             </div>
-            <div class="col-12 col-md-6" id="right_side">
+            <div
+              class="col-12 col-md-6 d-flex flex-column justify-content-center mt-3 mt-md-0 py-5 py-md-0"
+              id="right_side"
+            >
               <div class="row g-0 sticker_rel">
                 <div class="col-7">
                   <img
@@ -180,18 +205,1044 @@
         </div>
       </div>
       <div class="container-fluid">
-        <div class="container-fluid">
-          <div class="container d-flex align-items-center">
-            <div class="company_work">
-              <p class="fw-bold fs-2">Companies <p class="fw-bold fs-2"> We Work with</p></p>
-              
+        <div class="container-fluid work_bg">
+          <div class="container">
+            <div class="row text-md-start text-center">
+              <div class="col-lg-7 col-12">
+                <div class="row d-flex align-items-center">
+                  <div class="col-md-4 col-12 d-flex flex-column gap-0">
+                    <p style="margin: 0" class="fw-bold fs-2">Companies</p>
+                    <p class="fw-bold fs-2">We Work with</p>
+                  </div>
+                  <div class="col-md-8 col-12">
+                    <p>
+                      Use this section to describe your company and the products
+                      you offer. You could share your company’s story and
+                      details about why you are in business.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="company_des">
-              <p class="">
+          </div>
+          <div class="container text-center text-md-start">
+            <div class="row gap-5 mt-5">
+              <div class="col-md col-12">
+                <img
+                  src="assets\images\partner_logo\Company logo.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md col-12">
+                <img
+                  src="./assets/images/partner_logo/Company logo (1).png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md col-12">
+                <img
+                  src="assets\images\partner_logo\Company logo (3).png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md col-12">
+                <img
+                  src="./assets/images/partner_logo/Company logo (2).png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md col-12">
+                <img
+                  src="./assets/images/partner_logo/Company logo (3).jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+
+            <div class="row pt-5 gap-5">
+              <div class="col-md col-12">
+                <img
+                  src="assets\images\partner_logo\Company logo.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md col-12">
+                <img
+                  src="./assets/images/partner_logo/Company logo (1).jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md col-12">
+                <img
+                  src="./assets/images/partner_logo/Company logo (2).jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md col-12">
+                <img
+                  src="assets\images\partner_logo\Company logo (4).png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md col-12">
+                <img
+                  src="assets\images\partner_logo\Company logo (4).jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5 py-5">
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <div class="row">
+                <div class="col-6">
+                  <h1 class="fw-bold">245%</h1>
+                  <p class="text-secondary w-md-50">
+                    More revenues for the brand
+                  </p>
+                </div>
+                <div class="col-6">
+                  <h1 class="fw-bold">130K+</h1>
+                  <p class="text-secondary">
+                    Audiences reached across platfrom
+                  </p>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-6">
+                  <h1 class="fw-bold">50+</h1>
+                  <p class="text-secondary">brands work with us</p>
+                </div>
+                <div class="col-6">
+                  <h1 class="fw-bold">24+</h1>
+                  <p class="text-secondary">
+                    Use this section to describe your
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-8 col d-flex flex-column justify-content-between"
+            >
+              <div class="row">
+                <div class="col-12">
+                  <h1>Our Commitments</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <p class="text-secondary">
+                    Use this section to describe your company and the products
+                    you offer. You could share your company’s story and details
+                    about why you are in business. Use this section to describe
+                    your company and the products you offer. You could share
+                    your company’s story and details about why you are in
+                    business.
+                  </p>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-12">
+                  <p>
+                    <a class="fw-bold text-decoration-none" href="#"
+                      >Learn More <i class="fa-solid fa-arrow-right fa-sm"></i
+                    ></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5 py-5 " id="section1">
+          <div class="row">
+            <div
+              class="col-md-5 col-12 d-flex flex-column justify-content-center gap-3 mt-4"
+            >
+              <div><h1 class="text-capitalize fw-bold">how it Works</h1></div>
+              <div>
+                <p class="text-secondary">
+                  Use this section to describe your company and the products you
+                  offer. You could share your company’s story and details about
+                  why you are in business.
+                </p>
+              </div>
+              <div>
+                <img
+                  src="assets\Rectangle 160.png
+                "
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-md-7 con_3 col-12 d-flex flex-column justify-content-between">
+              <div class="row py-3 py-md-0">
+                <div
+                  class="col-6 d-flex flex-column align-items-center align-items-md-start"
+                >
+                  <div class="d-flex">
+                    <span
+                      class="bg-primary"
+                      style="padding: 28px; border-radius: 24px"
+                      ><img
+                        src="./assets/images/logo/heroicons-solid_lightning-bolt.png"
+                        alt=""
+                        class="img-fluid"
+                        height="inherit"
+                    /></span>
+                  </div>
+                  <div class="mt-4">
+                    <p class="fs-3">Ideation</p>
+                  </div>
+                  <div>
+                    <p class="text-secondary text-center text-md-start">
+                      Use this section to describe your company and the products
+                      you offer.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-6 d-flex flex-column align-items-center align-items-md-start"
+                >
+                  <div class="d-flex">
+                    <span
+                      class="bg-primary"
+                      style="padding: 28px; border-radius: 24px"
+                      ><img
+                        src="./assets/images/logo/Vector.png"
+                        alt=""
+                        class="img-fluid"
+                        height="inherit"
+                    /></span>
+                  </div>
+                  <div class="mt-4">
+                    <p class="fs-3">Budget</p>
+                  </div>
+                  <div>
+                    <p class="text-secondary text-center text-md-start">
+                      Use this section to describe your company and the products
+                      you offer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-3 py-md-0">
+                <div
+                  class="col-6 d-flex flex-column align-items-center align-items-md-start"
+                >
+                  <div class="d-flex">
+                    <span
+                      class="bg-primary"
+                      style="padding: 28px; border-radius: 24px"
+                      ><img
+                        src="./assets/images/logo/uil_arrow-growth.png"
+                        alt=""
+                        class="img-fluid"
+                        height="inherit"
+                    /></span>
+                  </div>
+                  <div class="mt-4">
+                    <p class="fs-3">Perfomance</p>
+                  </div>
+                  <div>
+                    <p class="text-secondary text-center text-md-start">
+                      Use this section to describe your company and the products
+                      you offer.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-6 d-flex flex-column align-items-center align-items-md-start"
+                >
+                  <div class="d-flex">
+                    <span
+                      class="bg-primary"
+                      style="padding: 28px; border-radius: 24px"
+                      ><img
+                        src="./assets/images/logo/heroicons-solid_lightning-bolt (1).png"
+                        alt=""
+                        class="img-fluid"
+                        height="inherit"
+                    /></span>
+                  </div>
+                  <div class="mt-4">
+                    <p class="fs-3">Speed</p>
+                  </div>
+                  <div class="">
+                    <p class="text-secondary text-center text-md-start">
+                      Use this section to describe your company and the products
+                      you offer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid p-5 mt-5" id="section2">
+        <div class="container text-center">
+          <div><h1>Our Work</h1></div>
+          <div>
+            <p class="text-capitalize text-secondary">
+              Use this section to describe your company and the products you
+              offer. You could share your company’s story and details about why
+              you are in business.
+            </p>
+          </div>
+        </div>
+        <div class="container d-md-flex gap-2 justify-content-md-between mt-5">
+          <div class="card border-0">
+            <img
+              src="./assets/images/works_bg/Rectangle 161.png "
+              class="img-fluid"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Apple</h5>
+              <p class="card-text">Use this section to describe your</p>
+            </div>
+          </div>
+          <div class="card border-0">
+            <img
+              src="assets\images\works_bg\Rectangle 161 (1).png"
+              class="img-fluid"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Coca-Cola</h5>
+              <p class="card-text">Use this section to describe your</p>
+            </div>
+          </div>
+          <div class="card border-0">
+            <img src="assets\images\works_bg\Rectangle 161 (2).png"
+            class="img-fluid" " />
+            <div class="card-body text-center">
+              <h5 class="card-title">Nike</h5>
+              <p class="card-text">Use this section to describe your</p>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center mt-4">
+          <button class="btn btn-primary rounded-5 px-5 py-3">See More</button>
+        </div>
+      </div>
+      <div
+        class="container-fluid p-5 mt-5 p-0"
+        style="background: linear-gradient(180deg, #3461ff 0%, #8399e9 100%)"
+      >
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-md-4 col-12">
+              <h1 class="text-capitalize text-white">
+                start your journey with us now
+              </h1>
+            </div>
+            <div class="col-md-8 col-12 mt-4 mt-md-0">
+              <p class="text-white mt-4 mt-md-0">
                 Use this section to describe your company and the products you
                 offer. You could share your company’s story and details about
-                why you are in business.
+                why you are in business. Use this section to describe your
+                company and the products you offer. You could share your
+                company’s story and
               </p>
+              <div class="mt-2">
+                <a href="#" class="text-decoration-none text-white"
+                  >Learn More <i class="fa-solid fa-arrow-right fa-sm"></i
+                    ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-5 py-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-6 col-12 d-flex flex-column justify-content-center"
+            >
+              <div class="row text-center g-4">
+                <div class="col-md-4 col-12">
+                  <img
+                    src="assets\images\team\Rectangle 185.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-4 col-12">
+                  <img
+                    src="assets\images\team\Rectangle 184.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-4 col-12">
+                  <img
+                    src="assets\images\team\Rectangle 181.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="row mt-3 text-center g-4">
+                <div class="col-md-4 col-12">
+                  <img
+                    src="assets\images\team\Rectangle 182.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+
+                <div class="col-md-4 col-12">
+                  <img
+                    src="assets\images\team\Rectangle 183 (1).png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-4 col-12">
+                  <img
+                    src="assets\images\team\Rectangle 186.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-12 mt-md-0 mt-5 ps-md-5 ps-0 d-flex flex-column justify-content-between"
+            >
+              <div class="text-center text-md-start">
+                <div><h1 class="fw-bold">Meet Our Team</h1></div>
+                <div>
+                  <p class="fs-1 text-secondary fw-light">
+                    Use this section to describe your company and the
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    Use this section to describe your company and the products
+                    you offer. You could share your company’s story and details
+                    about why you are in business.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-md-0 mt-3 text-center text-md-start">
+                <button class="btn btn-primary px-5 rounded-5 py-3">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="pt-5 pb-3">
+        <div class="container" id="section4">
+          <div class="row">
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators2"
+                class="carousel slide"
+                data-interval="false"
+              >
+                <div class="carousel-inner">
+                  <section class="pt-2">
+                    <div class="container">
+                      <div class="row hover_card">
+                        <div class="col-md-6 col-12 text-center text-md-start">
+                          <div>
+                            <h2 class="fw-bold text-capitalize">
+                              What Our Client Said about us
+                            </h2>
+                          </div>
+                          <div>
+                            <p class="text-capitalize">
+                              Use this section to describe your company
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-12 text-center text-md-end">
+                          <a
+                            class="btn btn-primary rounded-circle bg-body-tertiary border border-0"
+                            href="#carouselExampleIndicators2"
+                            role="button"
+                            data-slide="prev"
+                          >
+                            <i class="fa fa-arrow-left" style="color: gray"></i>
+                          </a>
+                          <a
+                            class="btn btn-primary rounded-circle"
+                            href="#carouselExampleIndicators2"
+                            role="button"
+                            data-slide="next"
+                          >
+                            <i class="fa fa-arrow-right"></i>
+                          </a>
+                        </div>
+                        <div class="col-12 mt-5 mt-md-0">
+                          <div
+                            id="carouselExampleIndicators2"
+                            class="carousel slide"
+                            data-interval="false"
+                          >
+                            <div class="carousel-inner">
+                              <div class="carousel-item">
+                                <div class="row">
+                                  <div class="col-md-4 mb-3">
+                                    <div class="card p-3 border-0">
+                                      <div class="row g-0">
+                                        <div
+                                          class="col-md-3 col-3 d-flex align-items-center"
+                                        >
+                                          <img
+                                            src="assets\images\clients\Ellipse 80.png"
+                                            class="img-fluid"
+                                            alt="..."
+                                          />
+                                        </div>
+                                        <div class="col">
+                                          <div class="card-body">
+                                            <h5 class="card-title">
+                                              Amelia Joseph
+                                            </h5>
+                                            <p class="card-text">
+                                              <small class="text-muted"
+                                                >Chief Manager</small
+                                              >
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <p class="card-text">
+                                        This is a wider card with supporting
+                                        text below as a natural lead-in to
+                                        additional content. This content is a
+                                        little bit longer.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                    <div class="card p-3 border-0">
+                                      <div class="row g-0">
+                                        <div
+                                          class="col-md-3 col-3 d-flex align-items-center"
+                                        >
+                                          <img
+                                            src="assets\images\clients\Ellipse 80.png"
+                                            class="img-fluid"
+                                            alt="..."
+                                          />
+                                        </div>
+                                        <div class="col">
+                                          <div class="card-body">
+                                            <h5 class="card-title">
+                                              Amelia Joseph
+                                            </h5>
+                                            <p class="card-text">
+                                              <small class="text-muted"
+                                                >Chief Manager</small
+                                              >
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <p class="card-text">
+                                        This is a wider card with supporting
+                                        text below as a natural lead-in to
+                                        additional content. This content is a
+                                        little bit longer.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                    <div class="card p-3 border-0">
+                                      <div class="row g-0">
+                                        <div
+                                          class="col-md-3 col-3 d-flex align-items-center"
+                                        >
+                                          <img
+                                            src="assets\images\clients\Ellipse 80 (2).png"
+                                            class="img-fluid"
+                                            alt="..."
+                                          />
+                                        </div>
+                                        <div class="col">
+                                          <div class="card-body">
+                                            <h5 class="card-title">
+                                              Jacob Joshua
+                                            </h5>
+                                            <p class="card-text">
+                                              <small class="text-muted"
+                                                >Chief Manager</small
+                                              >
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <p class="card-text">
+                                        This is a wider card with supporting
+                                        text below as a natural lead-in to
+                                        additional content. This content is a
+                                        little bit longer.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="row hover_card">
+                                  <div class="col-md-4 mb-3">
+                                    <div class="card p-3 border-0">
+                                      <div class="row g-0">
+                                        <div
+                                          class="col-md-3 col-3 d-flex align-items-center"
+                                        >
+                                          <img
+                                            src="assets\images\clients\Ellipse 80.png"
+                                            class="img-fluid"
+                                            alt="..."
+                                          />
+                                        </div>
+                                        <div class="col">
+                                          <div class="card-body">
+                                            <h5 class="card-title">
+                                              Amelia Joseph
+                                            </h5>
+                                            <p class="card-text">
+                                              <small class="text-muted"
+                                                >Chief Manager</small
+                                              >
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <p class="card-text">
+                                        This is a wider card with supporting
+                                        text below as a natural lead-in to
+                                        additional content. This content is a
+                                        little bit longer.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                    <div class="card p-3 border-0">
+                                      <div class="row g-0">
+                                        <div
+                                          class="col-md-3 col-3 d-flex align-items-center"
+                                        >
+                                          <img
+                                            src="./assets/images/clients/Ellipse 80 (1).png"
+                                            class="img-fluid"
+                                            alt="..."
+                                          />
+                                        </div>
+                                        <div class="col">
+                                          <div class="card-body">
+                                            <h5 class="card-title">
+                                              Amelia Joseph
+                                            </h5>
+                                            <p class="card-text">
+                                              <small class="text-muted"
+                                                >Chief Manager</small
+                                              >
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <p class="card-text">
+                                        This is a wider card with supporting
+                                        text below as a natural lead-in to
+                                        additional content. This content is a
+                                        little bit longer.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 mb-3">
+                                    <div class="card p-3 border-0">
+                                      <div class="row g-0">
+                                        <div
+                                          class="col-md-3 col-3 d-flex align-items-center"
+                                        >
+                                          <img
+                                            src="assets\images\clients\Ellipse 80 (2).png"
+                                            class="img-fluid"
+                                            alt="..."
+                                          />
+                                        </div>
+                                        <div class="col">
+                                          <div class="card-body">
+                                            <h5 class="card-title">
+                                              Jacob Joshua
+                                            </h5>
+                                            <p class="card-text">
+                                              <small class="text-muted"
+                                                >Chief Manager</small
+                                              >
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <p class="card-text">
+                                        This is a wider card with supporting
+                                        text below as a natural lead-in to
+                                        additional content. This content is a
+                                        little bit longer.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div class="container-fluid p-md-5 p-0 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-12 text-center text-md-start">
+              <div>
+                <h2 class="fw-bold text-capitalize">
+                  What Our Client Said about us
+                </h2>
+              </div>
+              <div>
+                <p class="text-capitalize">
+                  Use this section to describe your company
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div
+                class="d-md-flex justify-content-md-end align-items-md-center text-center py-3 gap-3"
+              >
+                <button class="btn btn-light rounded-5 px-3 py-2">
+                  <i
+                    class="fa-solid fa-arrow-left"
+                    style="color: #c3ccda"
+                  ></i></button
+                ><button class="btn btn-primary rounded-5 px-3 py-2">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="container p-0 hover_card mt-3">
+            <div class="row g-3">
+              <div class="col-md-4 col-12">
+                <div class="card p-3 border-0">
+                  <div class="row g-0">
+                    <div class="col-md-3 col-3 d-flex align-items-center">
+                      <img
+                        src="assets\images\clients\Ellipse 80.png"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="card-body">
+                        <h5 class="card-title">Amelia Joseph</h5>
+                        <p class="card-text">
+                          <small class="text-muted">Chief Manager</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="card p-3 border-0">
+                  <div class="row g-0">
+                    <div class="col-md-3 col-3 d-flex align-items-center">
+                      <img
+                        src="assets\images\clients\Ellipse 80 (1).png"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="card-body">
+                        <h5 class="card-title">Jacob Joshua</h5>
+                        <p class="card-text">
+                          <small class="text-muted">Chief Manager</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="card p-3 border-0">
+                  <div class="row g-0">
+                    <div class="col-md-3 col-3 d-flex align-items-center">
+                      <img
+                        src="assets\images\clients\Ellipse 80 (2).png"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col">
+                      <div class="card-body">
+                        <h5 class="card-title">Jacob Joshua</h5>
+                        <p class="card-text">
+                          <small class="text-muted">Chief Manager</small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="container-fluid mt-5 py-5">
+        <div class="container p-5 bg_rounded">
+          <div class="row">
+            <div
+              class="col-md-8 col-12 text-white d-flex flex-column justify-content-evenly"
+            >
+              <div>
+                <h1 class="text-capitalize">start your journey with us now</h1>
+              </div>
+              <div>
+                <button class="btn btn-primary rounded-5 px-4 py-2">
+                  Start Now
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div
+                class="container mt-5 mt-md-0 p-0 rounded_img d-flex justify-content-center"
+              >
+                <div
+                  style="
+                    border-radius: 352px;
+                    background: #e0ff22;
+                    width: 200px;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <img
+                    src="./assets/images/logo/Vector (1).png"
+                    alt=""
+                    height="40px"
+                  />
+                  <img
+                    src="./assets/images/logo/Vector (2).png"
+                    alt=""
+                    height="40px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container py-5 mt-5">
+          <div class="row">
+            <div
+              class="col-md-6 col-12 d-flex flex-column justify-content-between"
+            >
+              <div
+                class="border-top border-1 border-dark-subtle d-flex justify-content-between py-2"
+              >
+                <div><p>How do i sign up for the project?</p></div>
+                <div>
+                  <a href="">
+                    <img
+                      src="assets\images\logo\material-symbols_add-circle-rounded.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="border-top border-1 border-dark-subtle d-flex justify-content-between py-2"
+              >
+                <div>
+                  <p>What thing that i should prepare before starting?</p>
+                </div>
+                <div>
+                  <a href="">
+                    <img
+                      src="assets\images\logo\material-symbols_add-circle-rounded.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="border-top border-bottom border-1 border-dark-subtle d-flex justify-content-between py-2"
+              >
+                <div>
+                  <p>Does my company need help for marketing advices?</p>
+                </div>
+                <div>
+                  <a href="">
+                    <img
+                      src="assets\images\logo\material-symbols_add-circle-rounded.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-12 d-flex flex-column justify-content-between gap-3 mt-5 mt-md-0"
+            >
+              <div><h3 class="text-capitalize">How we can help you?</h3></div>
+              <div>
+                <p class="text-secondary">
+                  Follow our newsletter. We will regulary update our latest
+                  project and availability.
+                </p>
+              </div>
+              <div class="btn_email row">
+                <input
+                  type="text"
+                  placeholder="Enter Your Email "
+                  class="border border-0 col-8"
+                />
+                <button class="col-3">Lets Talk</button>
+              </div>
+              <div>
+                <a href="#" class="fw-bold text-decoration-none"
+                  >More FAQ <i class="fa-solid fa-arrow-right fa-sm"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-5 last_con py-5">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-6 col-12">
+              <div
+                class="d-flex flex-column row-gap-4 text-center text-md-start"
+              >
+                <div>
+                  <a href="#" class="fw-bold">
+                    <img
+                      class="img-fluid"
+                      src="./assets/images/logo/Ellipse 87.png"
+                      alt="img1"
+                    /><img
+                      src="./assets/images/logo/Polygon 1.png"
+                      class="img-fluid"
+                      alt="img2"
+                    /><img
+                      src="./assets/images/logo/Embrace.png"
+                      class="img-fluid"
+                      alt="img3"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <p class="fw-bold">Los Angeles, California, USA</p>
+                </div>
+                <div class="text-center text-md-start">
+                  <a href=""
+                  ><i
+                    class="fa-brands fa-instagram fa-xl"
+                    style="color: #3461ff"
+                  ></i
+                ></a>
+                  <a href="#"
+                    ><i
+                      class="fa-brands fa-twitter fa-xl"
+                      style="color: #3461ff"
+                    ></i
+                  ></a>
+                 
+                  <a href=""
+                    ><i
+                      class="fa-brands fa-facebook fa-xl"
+                      style="color: #3461ff"
+                    ></i
+                  ></a>
+                </div>
+                <div>
+                  <button class="btn btn-primary rounded-5 px-5 py-2">
+                    Contact Us
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 mt-4 mt-md-0">
+              <div class="row py-3 text-center text-md-start">
+                <div class="col-md-4">Work With Us</div>
+                <div class="col-md-4">Private Coaching</div>
+                <div class="col-md-4">About Us</div>
+              </div>
+              <div class="row py-3 text-center text-md-start">
+                <div class="col-md-4">Advertise With Us</div>
+                <div class="col-md-4">Our Work</div>
+                <div class="col-md-4">FAQs</div>
+              </div>
+              <div class="row py-3 text-center text-md-start">
+                <div class="col-md-4">Support Us</div>
+                <div class="col-md-4">Our Commitment</div>
+                <div class="col-md-4">Report a Bug</div>
+              </div>
+              <div class="row py-3 text-center text-md-start">
+                <div class="col-md-4">Business Advices</div>
+                <div class="col-md-4">Our Team</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid footer py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-12">
+              <p class="text-white">
+                © 2022 Embrace, Inc. - All Rights Reserved
+              </p>
+            </div>
+            <div
+              class="col-md-4 col-12 d-flex justify-content-between mt-4 mt-md-0"
+            >
+              <div><p class="text-white">Terms of use</p></div>
+              <div><p class="text-white">Privacy policy</p></div>
             </div>
           </div>
         </div>
