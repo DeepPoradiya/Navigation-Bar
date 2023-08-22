@@ -2,4 +2,4 @@ Live URL Link: https://deepporadiya.github.io/tfz/figma_task/index.html
 
 - Task : figma Task
 
-- Topic : modify the carousel and task complate 97%
+- Topic : task complate 100% and modify the carousel use with scroll-snap-align,scroll-snap-stop,scroll-snap-type,flex,position,overflow

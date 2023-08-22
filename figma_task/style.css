@@ -48,6 +48,7 @@ input[type="text"] {
     .btn_email button {
         padding: 10px 5px;
     }
+
     #left_side {
         margin-top: 4rem;
         order: 2;
@@ -130,97 +131,116 @@ input[type="text"] {
     }
 
 }
+
 @media screen and (min-width:424px) and (max-width:500px) {
 
     .third_row_ab .third_row_ab1,
     .sticker_ab .sticker_ab2 {
         height: 70px;
     }
+
     .third_row_ab2 {
         position: absolute !important;
         inset: 1rem 2rem !important;
     }
+
     .third_row_ab {
         position: absolute;
         left: 25% !important;
-        top: -3rem  !important;
+        top: -3rem !important;
     }
+
     .sticker_ab1 {
-        position: absolute ;
+        position: absolute;
         left: 50% !important;
         transform: translate(25%, -50%) !important;
     }
+
     .sticker_ab2 {
         transform: translate(10%, -50%) !important;
         position: absolute;
         left: 43% !important;
     }
+
     .sticker_ab .sticker_ab1,
     .third_row_ab .third_row_ab2 {
         height: 40px;
     }
 
 }
+
 @media screen and (min-width:501px) and (max-width:767px) {
 
     .third_row_ab .third_row_ab1,
     .sticker_ab .sticker_ab2 {
         height: 85px;
     }
+
     .third_row_ab2 {
         position: absolute !important;
         inset: 1rem 2rem !important;
     }
+
     .third_row_ab {
         position: absolute;
         left: 25% !important;
-        top: -3rem  !important;
+        top: -3rem !important;
     }
+
     .sticker_ab1 {
-        position: absolute ;
+        position: absolute;
         left: 50% !important;
         transform: translate(25%, -50%) !important;
     }
+
     .sticker_ab2 {
         transform: translate(10%, -50%) !important;
         position: absolute;
         left: 43% !important;
     }
+
     .sticker_ab .sticker_ab1,
     .third_row_ab .third_row_ab2 {
         height: 50px;
     }
 
 }
+
 @media screen and (min-width:768px) and (max-width:992px) {
 
     .third_row_ab .third_row_ab1,
     .sticker_ab .sticker_ab2 {
         height: 60px;
     }
+
     .third_row_ab2 {
         position: absolute !important;
         inset: 1rem 1.5rem !important;
     }
+
     .third_row_ab {
         position: absolute;
         left: 25% !important;
-        top: -3rem  !important;
+        top: -3rem !important;
     }
+
     .sticker_ab1 {
-        position: absolute ;
+        position: absolute;
         left: 50% !important;
         transform: translate(25%, -50%) !important;
     }
+
     .sticker_ab2 {
         transform: translate(10%, -50%) !important;
         position: absolute;
         left: 43% !important;
     }
+
     .sticker_ab .sticker_ab1,
     .third_row_ab .third_row_ab2 {
         height: 35px;
     }
+
     .btn_email button {
         padding: 10px 4px;
     }
@@ -230,31 +250,37 @@ input[type="text"] {
         padding: 10px 9px;
     }
 }
+
 @media screen and (min-width:992px) and (max-width:1200px) {
 
     .third_row_ab .third_row_ab1,
     .sticker_ab .sticker_ab2 {
         height: 80px;
     }
+
     .third_row_ab2 {
         position: absolute !important;
         inset: 1rem 2rem !important;
     }
+
     .third_row_ab {
         position: absolute;
         left: 25% !important;
-        top: -3rem  !important;
+        top: -3rem !important;
     }
+
     .sticker_ab1 {
-        position: absolute ;
+        position: absolute;
         left: 50% !important;
         transform: translate(25%, -50%) !important;
     }
+
     .sticker_ab2 {
         transform: translate(10%, -50%) !important;
         position: absolute;
         left: 43% !important;
     }
+
     .sticker_ab .sticker_ab1,
     .third_row_ab .third_row_ab2 {
         height: 50px;
@@ -363,13 +389,13 @@ input[type="text"] {
 .hover_card .card:hover {
     background: #3461FF;
 }
+
 @media screen and (min-width:1150px) {
-    .rounded_img img
-    {
+    .rounded_img img {
         height: 80px !important;
     }
-    .rounded_img 
-    {
+
+    .rounded_img {
         border-radius: 352px !important;
         background: #e0ff22;
         width: 352px !important;
@@ -378,15 +404,15 @@ input[type="text"] {
         justify-content: center;
         align-items: center;
     }
-    
+
 }
+
 @media screen and (min-width:1151px) and (max-width:1200px) {
-    .rounded_img img
-    {
+    .rounded_img img {
         height: 80px !important;
     }
-    .rounded_img 
-    {
+
+    .rounded_img {
         border-radius: 352px !important;
         background: #e0ff22;
         width: 300px !important;
@@ -395,46 +421,37 @@ input[type="text"] {
         justify-content: center;
         align-items: center;
     }
-    
+
 }
 
-.bg_rounded
-{
+.bg_rounded {
     border-radius: 52px;
-    background: #232038;;
+    background: #232038;
+    ;
 }
-.last_con
-{
+
+.last_con {
     background-color: #FAFAFA;
 }
-.footer
-{
+
+.footer {
     background: rgba(0, 0, 0, 0.80);
 }
+
 /* slider */
 .gallery_scroller div.colored_card {
-    min-width: 100% !important;
-    min-height: 95% !important;
+    min-width: 100%;
+    min-height: 95%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .gallery .btn {
-    position: absolute;
-    top: 25% !important;
-    transform: translateY(-50%) !important;
-    height: 30px;
-    width: 30px;
-    border-radius: 2px;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    z-index: 1;
+
+    border-radius: 50%;
+    padding: 1rem;
 }
-
-
-
 .gallery {
     position: relative;
     padding: 0 10;
@@ -460,7 +477,7 @@ input[type="text"] {
     /* snap align center  */
     scroll-snap-align: center;
     scroll-snap-stop: always;
-    margin: 10px;
+    padding: 10px;
     position: relative;
 }
 
@@ -468,14 +485,7 @@ input[type="text"] {
     border-radius: 10px;
 }
 
-.gallery_scroller div.colored_card {
-    min-width: 33.33%;
-    min-height: 95%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .gallery_scroller div.colored_card>p {
     font-size: 10em;
@@ -501,30 +511,51 @@ input[type="text"] {
     color: white;
 }
 
-
-.gallery .btn {
-    position: absolute;
-
-    top: 50%;
-    transform: translateY(-50%);
-
-    height: 30px;
-    width: 30px;
-
-    border-radius: 2px;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-
-    z-index: 1;
-}
-
 .gallery .btn.next {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M25.557 14.7L13.818 2.961 16.8 0l16.8 16.8-16.8 16.8-2.961-2.961L25.557 18.9H0v-4.2z" fill="%23FFF" fill-rule="evenodd"/></svg>');
-    right: 10px;
+    border: 0;
+    background-color: #3461FF;
 }
 
 .gallery .btn.prev {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg width="18" height="18" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M33.6 14.7H8.043L19.782 2.961 16.8 0 0 16.8l16.8 16.8 2.961-2.961L8.043 18.9H33.6z" fill="%23FFF" fill-rule="evenodd"/></svg>');
-    left: 10px;
+    border: 0;
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+    .gallery .btn {
+
+        border-radius: 50%;
+        padding: 1.7rem;
+    }
+    .fa-xl
+    {
+        font-size: 2rem !important;
+    }
+    .gallery_scroller div.colored_card {
+        min-width: 80%;
+        min-height: 95%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and  (min-width:1025px) {
+    .gallery .btn {
+
+        border-radius: 50%;
+        padding: 1.5rem;
+    }
+    .fa-xl
+    {
+        font-size: 2rem !important;
+    }
+    .gallery_scroller div.colored_card {
+        min-width: 39%;
+        min-height: 95%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
