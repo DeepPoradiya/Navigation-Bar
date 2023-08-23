@@ -1,5 +1,5 @@
-Live URL Link: https://deepporadiya.github.io/tfz/figma_task/index.html
+Live URL Link: https://deepporadiya.github.io/tfz/
 
-- Task : figma Task
+- Task : Index Page
 
-- Topic : task complate 100% and modify the carousel use with scroll-snap-align,scroll-snap-stop,scroll-snap-type,flex,position,overflow
+- Topic : modify the index.html and style.css file using with grid,text-shadow,mediaquery,font-family

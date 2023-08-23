@@ -1,71 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style1.css" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <div class="header"><h1>bootstrap basic(03-07-2023)</h1>
-    <div class="buttons">
-      <button>
-        <a href="./bootstrap-basic/index.html">bootstrap basic</a>
-      </button>
-    </div>
-  </div>
-  <div class="header"><h1>bootstrap grid(04-07-2023)</h1>
-    <div class="buttons">
-      <button>
-        <a href="./boootstrap-grid/bootstrap_grid.html">bootstrap grid</a>
-      </button>
-    </div>
-  </div>
-    <div class="header"><h1>Bootstrap(05-07-2023)</h1></div>
-    <div class="buttons">
-      <button><a href="./bootstrap/typography.html">typography</a></button>
-      <button><a href="./bootstrap/alert.html">alert</a></button>
-      <button><a href="./bootstrap/color.html">table</a></button>
-      <button><a href="./bootstrap/image.html">image</a></button>
-      <button><a href="./bootstrap/table.html">table</a></button>
-    </div>
-
-    <div class="header"><h1>Bootstrap (18-07-2023)</h1></div>
-    <div class="buttons">
-      <button><a href="./18-07-2023/bootstrap-btn/btn.html">button</a></button>
-      <button><a href="./18-07-2023/bootstrap-card/card.html">card</a></button>
-      <button><a href="./18-07-2023/bootstrap-collapse/collapse.html">collapse</a></button>
-      <button><a href="./18-07-2023/bootstrap-dropdown/dropdown.html">dropdown</a></button>
-      <button><a href="./18-07-2023/bootstrap-pagination/pagination.html">pagination</a></button>
-      <button><a href="./18-07-2023/bootstrap-progress/progress.html">progress</a></button>
-    </div>
-    <div class="header"><h1>Bootstrap (19-07-2023)</h1></div>
-    <div class="buttons">
-      <button><a href="./19-07-2023/nav/navs.html">navs</a></button>
-      <button><a href="./19-07-2023/navbar/navbar.html">navbar</a></button>
-    </div>
-    <div class="header"><h1>Bootstrap (20-07-2023)</h1></div>
-    <div class="buttons">
-      <button><a href="./20-07-2023/carousel/carousel.html">carousel</a></button>
-      <button><a href="./20-07-2023/modal/modal.html">modal</a></button>
-      <button><a href="./20-07-2023/offcanvas/offcanvas.html">offcanvas</a></button>
-      <button><a href="./20-07-2023/scrollspy/scrollspy.html">scrollspy</a></button>
-    </div>
-    <div class="header"><h1>Bootstrap (21-07-2023)</h1></div>
-    <div class="buttons">
-      <button><a href="./21-07-2023/utilities/aspect_ratio.html">aspect ratio</a></button>
-      <button><a href="./21-07-2023/form_validation/form_validation.html">Form Validation</a></button>
-      <button><a href="./21-07-2023/webforms/webform.html">Webforms</a></button>
-    </div>
-
-    <div class="header"><h1>Bootstrap (24-07-2023)</h1></div>
-    <div class="buttons">
-      <button><a href="./bootstrap_template1/index.html">bootstrap template 1</a></button>
-    </div>
-    <div class="header"><h1>Bootstrap (25-07-2023)</h1></div>
-    <div class="buttons">
-      <button><a href="./bootstrap_template2/index.html">bootstrap template 2</a></button>
+   
+    <div class="container-fluid">
+      <div class="container">
+        <!-- bootstrap basic -->
+        <div class="topic mt-3">
+          <h1 class="fw-bold">bootstrap(03-07-2023)</h1>
+          <div class="grid_view mt-3">
+            <a
+              href="./bootstrap-basic/index.html "
+              class="btn btn-outline-warning"
+              >bootstrap basic</a
+            >
+          </div>
+        </div>
+        <!-- bootstrap grid -->
+        <div class="topic mt-3">
+          <h1 class="fw-bold">bootstrap(04-07-2023)</h1>
+          <div class="grid_view mt-3">
+            <a href="./boootstrap-grid/bootstrap_grid.html" class="btn btn-outline-warning">bootstrap grid</a>
+          </div>
+        </div>
+        <!-- bootstrap -->
+        <div class="topic mt-3">
+          <h1 class="fw-bold">Bootstrap(05-07-2023)</h1>
+          <div class="grid_view mt-3">
+            <a href="./bootstrap/typography.html" class="btn btn-outline-warning">typography</a>
+            <a href="./bootstrap/alert.html" class="btn btn-outline-warning">alert</a>
+            <a href="./bootstrap/color.html" class="btn btn-outline-warning">table</a>
+            <a href="./bootstrap/image.html" class="btn btn-outline-warning">image</a>
+            <a href="./bootstrap/table.html" class="btn btn-outline-warning">table</a>
+          </div>
+        </div>
+        <!-- bootstrap -->
+        <div class="topic mt-3">
+          <h1 class="fw-bold">Bootstrap(18-07-2023)</h1>
+          <div class="grid_view mt-3">
+            <a href="./18-07-2023/bootstrap-btn/btn.html" class="btn btn-outline-warning">button</a>
+            <a href="./18-07-2023/bootstrap-card/card.html" class="btn btn-outline-warning">card</a>
+            <a href="./18-07-2023/bootstrap-collapse/collapse.html" class="btn btn-outline-warning">collapse</a>
+            <a href="./18-07-2023/bootstrap-dropdown/dropdown.html" class="btn btn-outline-warning">dropdown</a>
+            <a href="./18-07-2023/bootstrap-pagination/pagination.html" class="btn btn-outline-warning">pagination</a>
+            <a href="./18-07-2023/bootstrap-progress/progress.html" class="btn btn-outline-warning">progress</a>
+          </div>
+        </div>
+        <!-- bootstrap -->
+        <div class="topic mt-3">
+          <h1 class="fw-bold">Bootstrap(19-07-2023)</h1>
+          <div class="grid_view mt-3">
+            <a href="./19-07-2023/nav/navs.html" class="btn btn-outline-warning">navs</a>
+            <a href="./19-07-2023/navbar/navbar.html" class="btn btn-outline-warning">navbar</a>
+          </div>
+        </div>
+        <!-- bootstrap -->
+        <div class="topic mt-3">
+          <h1 class="fw-bold">Bootstrap (20-07-2023)</h1>
+          <div class="grid_view mt-3">
+            <a class="btn btn-outline-warning" href="./20-07-2023/carousel/carousel.html">carousel</a>
+            <a class="btn btn-outline-warning" href="./20-07-2023/modal/modal.html">modal</a>
+            <a class="btn btn-outline-warning" href="./20-07-2023/offcanvas/offcanvas.html">offcanvas</a>
+            <a class="btn btn-outline-warning" href="./20-07-2023/scrollspy/scrollspy.html">scrollspy</a>
+          </div>
+        </div>
+        <!-- bootstrap -->
+        <div class="topic mt-3">
+          <h1 class="fw-bold">Bootstrap (21-07-2023)</h1>
+          <div class="grid_view mt-3">
+            <a class="btn btn-outline-warning" href="./21-07-2023/utilities/aspect_ratio.html">aspect ratio</a>
+            <a class="btn btn-outline-warning" href="./21-07-2023/form_validation/form_validation.html">Form Validation</a>
+            <a class="btn btn-outline-warning" href="./21-07-2023/webforms/webform.html">Webforms</a>
+          </div>
+        </div>
+        <!-- bootstrap -->
+        <div class="topic mt-3">
+          <h1 class="fw-bold">Bootstrap (24-07-2023)</h1>
+          <div class="grid_view mt-3">
+            <a class="btn btn-outline-warning" href="./bootstrap_template1/index.html">bootstrap template 1</a>
+          </div>
+        </div>
+        <!-- bootstrap -->
+        <div class="topic mt-3">
+          <h1 class="fw-bold">Bootstrap (25-07-2023)</h1>
+          <div class="grid_view mt-3">
+            <a class="btn btn-outline-warning" href="./bootstrap_template2/index.html">bootstrap template 2</a>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
