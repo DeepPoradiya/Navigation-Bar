@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- javascript -->
+    <script>
+      function myfunc() {
+        var demo_script = document.getElementById("demo3");
+        demo_script.style.fontSize = "2rem";
+        demo_script.style.color = "red";
+        demo_script.style.fontStyle = "italic";
+        demo_script.style.backgroundColor = "white";
+      }
+      var no1 = 0;
+      var no2 = 0;
+
+      function updateNumbers() {
+        no1 = parseInt(document.getElementById("first_value").value);
+        no2 = parseInt(document.getElementById("second_value").value);
+      }
+
+      function add() {
+        updateNumbers();
+        var total = no1 + no2;
+        document.getElementById("final_value").value = total;
+      }
+
+      function sub() {
+        updateNumbers();
+        var total = no1 - no2;
+        document.getElementById("final_value").value = total;
+      }
+
+      function mul() {
+        updateNumbers();
+        var total = no1 * no2;
+        document.getElementById("final_value").value = total;
+      }
+
+      function div() {
+        updateNumbers();
+        var total = no1 / no2;
+        document.getElementById("final_value").value = total;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <h1 class="fw-bold text-white bg-primary text-center py-3">
+        Inline Script
+      </h1>
+      <div class="container bg-black p-4 mt-3">
+        <h2 class="fw-bold text-white">
+          <span class="border-bottom border-3 border-white">Click Event</span>
+        </h2>
+        <div class="mt-3">
+          <button
+            class="btn btn-outline-danger"
+            type="button"
+            onclick="document.getElementById('demo').innerHTML=Date()"
+          >
+            Click Here To Display Date And Time
+          </button>
+          <p class="fw-bold text-warning mt-2" id="demo"></p>
+        </div>
+      </div>
+
+      <div class="container bg-black p-4 mt-3">
+        <h2 class="fw-bold text-white">
+          <span class="border-bottom border-3 border-white"
+            >What Can JavaScript Do?</span
+          >
+        </h2>
+        <div class="mt-3">
+          <button
+            class="btn btn-outline-danger"
+            type="button"
+            onclick='document.getElementById("demo1").innerHTML="hello My Name Is Deep"'
+            ;
+          >
+            Click Here To Change The Text
+          </button>
+          <p class="fw-bold text-warning mt-2 text-capitalize" id="demo1">
+            I Am from Junagadh
+          </p>
+        </div>
+      </div>
+
+      <div class="container bg-black p-4 mt-3">
+        <p class="text-white fw-bold">
+          JavaScript can change HTML attribute values.
+        </p>
+
+        <p class="text-white fw-bold">
+          In this case JavaScript changes the value of the src (source)
+          attribute of an image.
+        </p>
+
+        <div class="mt-3">
+          <button
+            class="btn btn-outline-danger"
+            type="button"
+            onclick="document.getElementById('img1').src='./pic_bulbon.gif'"
+            ;
+          >
+            Turn On light
+          </button>
+          <img id="img1" src="./pic_bulboff.gif" alt="bulb" width="150px" />
+          <button
+            class="btn btn-outline-danger"
+            type="button"
+            onclick="document.getElementById('img1').src='./pic_bulboff.gif'"
+            ;
+          >
+            Turn Off light
+          </button>
+        </div>
+      </div>
+
+      <div class="container bg-black p-4 mt-3">
+        <div class="mt-3">
+          <button
+            class="btn btn-outline-danger"
+            type="button"
+            onclick="document.getElementById('chngtext').style.fontSize='35px'"
+          >
+            Click Me
+          </button>
+          <p id="chngtext" class="text-warning mt-3">
+            JavaScript can change the style of an HTML element.
+          </p>
+        </div>
+      </div>
+
+      <div class="container bg-black p-4 mt-3">
+        <p class="fw-bold text-white">JavaScript can hide HTML elements.</p>
+        <p class="fw-bold text-white">
+          JavaScript can show hidden HTML elements.
+        </p>
+
+        <div class="mt-3">
+          <button
+            class="btn btn-outline-danger"
+            type="button"
+            onclick="document.getElementById('show_hide').style.display='none'"
+          >
+            Hide
+          </button>
+          <button
+            class="btn btn-outline-danger"
+            type="button"
+            onclick="document.getElementById('show_hide').style.display='block'"
+          >
+            Show
+          </button>
+          <p id="show_hide" class="fw-bold text-white mt-3">Hello World</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-0 mt-3">
+      <h1 class="fw-bold text-white bg-primary text-center py-3">
+        Internal Script
+      </h1>
+      <div class="container mt-3 bg-black p-3">
+        <h2 class="text-white fw-bold">
+          <span class="border-bottom border-3 border-white"
+            >JavaScript in Body</span
+          >
+        </h2>
+        <button
+          class="btn btn-outline-danger my-3"
+          onclick="myfunc()"
+          type="button"
+        >
+          Function click Event
+        </button>
+        <p class="fw-bold fs-3" id="demo3">My Name Is Deep</p>
+      </div>
+    </div>
+
+    <div class="container bg-black my-4 p-3">
+      <h1 class="fw-bold text-white text-center mt-3"><span class="border-bottom border-3 border-white">AIRTHMATIC OPERATIONS</span></h1>
+
+      <div class="mt-3">
+        <div class="form-group">
+          <label for="" class="fw-bold fs-4 my-3 text-white">First Value</label>
+          <input
+            class="form-control"
+            type="text"
+            name="first_value"
+            id="first_value"
+            placeholder="first_value"
+          />
+        </div>
+        <div>
+          <label for="" class="fw-bold fs-4 my-3 text-white"
+            >Second Value</label
+          >
+
+          <input
+            class="form-control"
+            type="text"
+            name="second_value"
+            id="second_value"
+            placeholder="second_value"
+          />
+        </div>
+        <div>
+          <label for="" class="fw-bold fs-4 my-3 text-white">Final Value</label>
+
+          <input
+            class="form-control"
+            type="text"
+            name="final_value"
+            id="final_value"
+            placeholder="final_value"
+            disabled
+          />
+        </div>
+      </div>
+      <div class="my-3 text-center">
+        <button type="button" onclick="add()" class="btn btn-danger">
+          ADDITION
+        </button>
+
+        <button type="button" onclick="sub()" class="btn btn-danger">
+          SUBTRACTION
+        </button>
+
+        <button type="button" onclick="mul()" class="btn btn-danger">
+          MUlTIPICATION
+        </button>
+
+        <button type="button" onclick="div()" class="btn btn-danger">
+          DIVISON
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
