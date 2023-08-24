@@ -1,5 +1,5 @@
-Live URL Link: https://deepporadiya.github.io/tfz/
+Live URL Link: https://deepporadiya.github.io/tfz/js/index.html
 
-- Task : Index Page
+- Task : Javascript Basic
 
-- Topic : modify the index.html and style.css file using with grid,text-shadow,mediaquery,font-family
+- Topic : javascript  basic program as like function calling,property
