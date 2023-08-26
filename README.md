@@ -1,5 +1,5 @@
 Live URL Link: https://deepporadiya.github.io/tfz/js/index.html
 
-- Task : Javascript Variables
+- Task : Javascript Operators
 
-- Topic : javascript  variables var,let,const,math.floor(),math.random()
+- Topic : javascript  operators airthmatic,Comparison using with if else condition
