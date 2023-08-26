@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function comp() {
+        let numb1 = parseInt(document.getElementById("num1").value);
+        let numb2 = parseInt(document.getElementById("num2").value);
+        if (numb1 == numb2) {
+          window.alert("Your Value Is Equal");
+        } else if (String(numb1 === numb2)) {
+          window.alert("Your Value and type is Equal");
+        } else if (numb1 != numb2) {
+          window.alert("Your Value Not equal");
+        } else if (String(numb1 !== numb2)) {
+          window.alert("Your Value and type is Not Equal");
+        } else if (numb1 > numb2) {
+          window.alert("Number 1 is greter than number2");
+        } else if (numb1 < numb2) {
+          window.alert("Number 1 is less than number2");
+        } else if (numb1 >= numb2) {
+          window.alert("Number 1 is greter than equal to number2");
+        } else if (numb1 <= numb2) {
+          window.alert("Number 1 is less than equal to number2");
+        }
+
+        // else
+        // {
+        //     window.alert("none of above");
+        // }
+      }
+      var no1 = 0;
+      var no2 = 0;
+
+      function var_declare() {
+        no1 = parseFloat(document.getElementById("no1").value);
+        no2 = parseFloat(document.getElementById("no2").value);
+      }
+
+      function add() {
+        var_declare();
+        var ans = no1 + no2;
+        document.getElementById("ans").value = ans;
+      }
+
+      function sub() {
+        var_declare();
+        var ans = no1 - no2;
+        document.getElementById("ans").value = ans;
+      }
+
+      function mul() {
+        var_declare();
+        var ans = no1 * no2;
+        document.getElementById("ans").value = ans;
+      }
+
+      function div() {
+        var_declare();
+        if (no2 !== 0) {
+          var ans = no1 / no2;
+          document.getElementById("ans").value = ans;
+        } else {
+          document.getElementById("ans").value = "Cannot divide by zero";
+        }
+      }
+
+      function mode() {
+        var_declare();
+        if (no2 !== 0) {
+          var ans = no1 % no2;
+          document.getElementById("ans").value = ans;
+        } else {
+          document.getElementById("ans").value = "Cannot divide by zero";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <h1 class="fw-bold text-uppercase bg-success-subtle text-center py-3">
+        <span class="border-bottom border-3 border-black"
+          >JavaScript Operators</span
+        >
+      </h1>
+      <div class="container">
+        <h2
+          class="fw-bold text-uppercase bg-success text-center text-white py-3"
+        >
+          <span class="border-bottom border-3 border-white"
+            >Airthmatic Operators</span
+          >
+        </h2>
+        <div class="container mt-3 bg-warning py-3">
+          <label for="" class="fw-bold fs-3">Enter First Value</label>
+          <input type="text" class="form-control" id="no1" />
+          <label for="" class="fw-bold fs-3">Enter Second Value</label>
+          <input type="text" class="form-control" id="no2" />
+          <label for="" class="fw-bold fs-3">Total</label>
+          <input type="text" class="form-control" id="ans" />
+          <div
+            class="d-md-flex justify-content-md-center gap-2 mt-2 d-flex flex-column"
+          >
+            <button class="btn btn-success" type="button" onclick="add()">
+              ADDITION
+            </button>
+            <button class="btn btn-success" type="button" onclick="sub()">
+              SUBTRACTION
+            </button>
+            <button
+              class="btn btn-success text-uppercase"
+              type="button"
+              onclick="mul()"
+            >
+              Multiplication
+            </button>
+            <button class="btn btn-success" type="button" onclick="div()">
+              DIVISON
+            </button>
+            <button class="btn btn-success" type="button" onclick="mode()">
+              MODULUS
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <h2
+          class="fw-bold text-uppercase bg-success text-center text-white py-3"
+        >
+          <span class="border-bottom border-3 border-white">
+            Comparison Operators</span
+          >
+        </h2>
+        <div class="container mt-3 bg-warning py-3">
+          <label for="" class="fw-bold fs-3">Enter First Value</label>
+          <input type="text" class="form-control" id="num1" />
+          <label for="" class="fw-bold fs-3">Enter Second Value</label>
+          <input type="text" class="form-control" id="num2" />
+
+          <div
+            class="mt-2"
+          >
+            <button class="btn btn-success" type="button" onclick="comp()">
+              Comparison Value
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
