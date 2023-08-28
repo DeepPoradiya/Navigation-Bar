@@ -18,15 +18,24 @@
 
     <script>
       function comp() {
-        let numb1 = parseInt(document.getElementById("num1").value);
+        const numb1 = document.getElementById("num1").value;
+        const test = () => {
+          console.log(numb1, "numb1");
+        }
+        test();
         let numb2 = parseInt(document.getElementById("num2").value);
-        if (numb1 == numb2) {
-          window.alert("Your Value Is Equal");
-        } else if (String(numb1 === numb2)) {
-          window.alert("Your Value and type is Equal");
-        } else if (numb1 != numb2) {
-          window.alert("Your Value Not equal");
-        } else if (String(numb1 !== numb2)) {
+        console.log(typeof(numb1), numb1);
+        console.log(typeof(numb2), numb2)
+        // if (numb1 === numb2) {
+        //   window.alert("Your Value and type is Equal");
+        // } 
+        // else if (numb1 == numb2) {
+        //   window.alert("Your Value Is Equal");
+        // }
+        //   if (numb1 != numb2) {
+        //   window.alert("Your Value Not equal");
+        // } 
+        if (numb1 !== numb2) {
           window.alert("Your Value and type is Not Equal");
         } else if (numb1 > numb2) {
           window.alert("Number 1 is greter than number2");
@@ -113,7 +122,7 @@
           <label for="" class="fw-bold fs-3">Total</label>
           <input type="text" class="form-control" id="ans" />
           <div
-            class="d-md-flex justify-content-md-center gap-2 mt-2 d-flex flex-column"
+            class="d-flex flex-md-row justify-content-md-center gap-3 mt-2 flex-column "
           >
             <button class="btn btn-success" type="button" onclick="add()">
               ADDITION

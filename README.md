@@ -1,5 +1,5 @@
 Live URL Link: https://deepporadiya.github.io/tfz/js/index.html
 
-- Task : Javascript Operators
+- Task : Javascript data types
 
-- Topic : javascript  operators airthmatic,Comparison using with if else condition
+- Topic : javascript  datatypes in string methods uppercase and length
