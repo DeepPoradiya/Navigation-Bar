@@ -1,5 +1,5 @@
 Live URL Link: https://deepporadiya.github.io/tfz/js/index.html
 
-- Task : Javascript data types
+- Task : Javascript String Methods
 
-- Topic : javascript  datatypes in string methods uppercase and length
+- Topic : javascript  string methods concat(),replace(),toUpperCase() .
