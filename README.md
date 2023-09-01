@@ -1,5 +1,5 @@
 Live URL Link: https://deepporadiya.github.io/tfz/js/index.html
 
-- Task : Javascript String Methods
+- Task : React-Js
 
-- Topic : javascript  string methods concat(),replace(),toUpperCase() .
+- Topic :Install the node & set up the React-Js & try the Tic-Tac-Toe Game
