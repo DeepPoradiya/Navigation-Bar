@@ -7,7 +7,7 @@ function App() {
   <>
       {/* <Navbar title="TextUtiles" abouttext="About Us" /> */}
       <Navbar />
-      <Textforms title="Enter Text" />
+      <Textforms title="Counter" />
       </>
      );
 }
