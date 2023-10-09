@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function slice_method() {
+        var val1 = document.getElementById("value1").value;
+        var val2 = parseInt(document.getElementById("value2").value);
+        var val3 = parseInt(document.getElementById("value3").value);
+        res = val1.slice(val2, val3);
+
+        document.getElementById("demo").innerHTML = res;
+      }
+      function trim_method() {
+        var numb1 = document.getElementById("numb1").value;
+        document.getElementById("lengths").innerHTML =
+          "Before use of length of string" + " " + numb1.length;
+
+        var reslt = numb1.trim();
+        document.getElementById("demo1").innerHTML = reslt;
+        document.getElementById("lg").innerHTML =
+          "After use of length of string" + " " + reslt.length;
+      }
+      function indexOf_method() {
+        var numb = document.getElementById("numb2").value;
+        var numb1 = document.getElementById("numb3").value;
+        res = numb.indexOf(numb1);
+        // lastreslt=numb.lastIndexOf(numb1);
+        document.getElementById("demo2").innerHTML =
+          "Index Number Of String" + " " + res;
+        // +"<br>"+"Last Index Number"+" "+lastreslt
+      }
+      function match_method() {
+        var numb = document.getElementById("numb4").value;
+        var numb1 = document.getElementById("numb5").value;
+        var res = numb.match(new RegExp(numb1, "gi"));
+        document.getElementById("demo3").innerHTML =
+          res + "<br>length of natch number" + " " + res.length;
+      }
+      function include_method()
+      {
+        var numb1=document.getElementById("numb6").value;
+        var numb2=document.getElementById("numb7").value;
+        res=numb1.includes(numb2);
+        document.getElementById("demo4").innerHTML=res;
+
+
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 class="fw-bold bg-black text-white text-center py-2">
+        <span class="border-bottom border-3 border-white">String Methods</span>
+      </h1>
+      <div class="container mt-3">
+        <h1 class="fw-bold bg-primary text-white text-center py-2">
+          <span class="border-bottom border-3 border-white">slice()</span>
+        </h1>
+        <div class="container bg-body-tertiary my-3 py-3">
+          <p class="fw-bold fs-3">Enter Any String</p>
+          <input type="text " class="form-control" id="value1" />
+
+          <p class="fw-bold fs-3">Enter A Start Value</p>
+          <input type="text " class="form-control" id="value2" />
+
+          <p class="fw-bold fs-3">Enter A End Value</p>
+          <input type="text " class="form-control" id="value3" />
+
+          <button class="btn btn-warning my-3" onclick="slice_method()">
+            CLICK HERE
+          </button>
+
+          <p class="fw-bold">Result:</p>
+          <p class="fw-bold" id="demo"></p>
+        </div>
+      </div>
+
+      <div class="container mt-3">
+        <h1 class="fw-bold bg-primary text-white text-center py-2">
+          <span class="border-bottom border-3 border-white">trim()</span>
+        </h1>
+        <div class="container bg-body-tertiary my-3 py-3">
+          <p class="fw-bold fs-3">Enter Any String</p>
+          <input type="text " class="form-control" id="numb1" />
+
+          <button class="btn btn-warning my-3" onclick="trim_method()">
+            CLICK HERE
+          </button>
+          <p class="fw-bold" id="lengths"></p>
+          <p class="fw-bold">Result:</p>
+          <p class="fw-bold" id="demo1"></p>
+          <p class="fw-bold" id="lg"></p>
+        </div>
+      </div>
+
+      <div class="container mt-3">
+        <h1 class="fw-bold bg-primary text-white text-center py-2">
+          <span class="border-bottom border-3 border-white">indexOf()</span>
+        </h1>
+        <div class="container bg-body-tertiary my-3 py-3">
+          <p class="fw-bold fs-3">Enter Any String</p>
+          <input type="text " class="form-control" id="numb2" />
+
+          <p class="fw-bold fs-3">Enter A string Character to search</p>
+          <input type="text " class="form-control" id="numb3" />
+
+          <button class="btn btn-warning my-3" onclick="indexOf_method()">
+            CLICK HERE
+          </button>
+          <p class="fw-bold">Result:</p>
+          <p class="fw-bold" id="demo2"></p>
+        </div>
+      </div>
+
+      <div class="container mt-3">
+        <h1 class="fw-bold bg-primary text-white text-center py-2">
+          <span class="border-bottom border-3 border-white">match()</span>
+        </h1>
+        <div class="container bg-body-tertiary my-3 py-3">
+          <p class="fw-bold fs-3">Enter Any String</p>
+          <input type="text " class="form-control" id="numb4" />
+
+          <p class="fw-bold fs-3">Enter A string Character to search</p>
+          <input type="text " class="form-control" id="numb5" />
+
+          <button class="btn btn-warning my-3" onclick="match_method()">
+            CLICK HERE
+          </button>
+          <p class="fw-bold">Result:</p>
+          <p class="fw-bold" id="demo3"></p>
+        </div>
+      </div>
+
+      <div class="container mt-3">
+        <h1 class="fw-bold bg-primary text-white text-center py-2">
+          <span class="border-bottom border-3 border-white">include()</span>
+        </h1>
+        <div class="container bg-body-tertiary my-3 py-3">
+          <p class="fw-bold fs-3">Enter Any String</p>
+          <input type="text " class="form-control" id="numb6" />
+
+          <p class="fw-bold fs-3"> string inlude of given string</p>
+          <input type="text " class="form-control" id="numb7" />
+
+          <button class="btn btn-warning my-3" onclick="include_method()">
+            CLICK HERE
+          </button>
+          <p class="fw-bold">Result:</p>
+          <p class="fw-bold" id="demo4"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
