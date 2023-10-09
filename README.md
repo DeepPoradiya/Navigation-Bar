@@ -1,5 +1,5 @@
-Live URL Link: https://deepporadiya.github.io/tfz/js/index.html
+Live URL Link: https://deepporadiya.github.io/tfz/js/09-10-2023/js_string_methods.html
 
-- Task : React-Js Basic
+- Task : javascript string methods
 
-- Topic : toLowerCase(),word count,character count ,read time,clear text,preview text,reverse text,split(),join()
+- Topic : string methods slice(),trim(),indexof(),match(),lastIndexOf(),include()
