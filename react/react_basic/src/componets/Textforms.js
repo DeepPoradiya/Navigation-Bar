@@ -25,7 +25,7 @@ export default function Textforms(props) {
 
     const [text,settext]=useState("");
   return (
-   <>      <div class="mb-3 container my-3">
+   <>      <div className="mb-3 container my-3">
         <h1 className="heading">{props.title}</h1>
        <div className="d-flex gap-3">
        <textarea
