@@ -1,5 +1,5 @@
-Live URL Link: https://deepporadiya.github.io/tfz/js/09-10-2023/js_string_methods.html
+Live URL Link: https://deepporadiya.github.io/tfz/index.html
 
-- Task : javascript string methods
+- Task : React-Js
 
-- Topic : string methods slice(),trim(),indexof(),match(),lastIndexOf(),include()
+- Topic : create a About.js comopnent and create dark mode button when click on darkmode button theme is changed in dark mode and When click again on button at that time change in light mode.
