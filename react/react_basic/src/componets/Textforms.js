@@ -21,11 +21,15 @@ export default function Textforms(props) {
     let newtext = text.split("").reverse().join("");
     settext(newtext);
   };
+  const texttoremoveextrasapce = () => {
+    let newtext = text.split(/[ ]+/);;
+    settext(newtext.join(" "));
+  };
     
 
     const [text,settext]=useState("");
   return (
-   <>      <div className="mb-3 container my-3">
+   <>      <div className={`container rounded-3 p-3 my-3  bg-${props.mode}  text-${props.mode==='light'?'dark':'light'}` }>
         <h1 className="heading">{props.title}</h1>
        <div className="d-flex gap-3">
        <textarea
@@ -53,6 +57,7 @@ export default function Textforms(props) {
         <button className="btn btn-outline-primary my-2" onClick={texttolower}>Click To LowerCase</button>
         <button className="btn btn-outline-primary my-2" onClick={texttoclear}>Click To Clear</button>
         <button className="btn btn-outline-primary my-2" onClick={texttoreverse}>Click To Reverse</button>
+        <button className="btn btn-outline-primary my-2" onClick={texttoremoveextrasapce}>Click To Remove Extra Sapces</button>
 
         </div>
       </div>
