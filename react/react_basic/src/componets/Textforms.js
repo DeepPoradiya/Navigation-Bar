@@ -4,12 +4,12 @@ export default function Textforms(props) {
   const texttoupper = () => {
     let newtext = text.toUpperCase();
     settext(newtext);
-    props.showalert("converted UpperCase succesfully", "success");
+    props.showAlert("converted UpperCase succesfully", "success");
   };
   const texttolower = () => {
     let newtext = text.toLowerCase();
     settext(newtext);
-    props.showalert("converted LowerCase succesfully", "success");
+    props.showAlert("converted LowerCase succesfully", "success");
   };
   const texttochange = (event) => {
     settext(event.target.value);
@@ -17,17 +17,17 @@ export default function Textforms(props) {
   const texttoclear = () => {
     let newtext = "";
     settext(newtext);
-    props.showalert("Clear the all text", "success");
+    props.showAlert("Clear the all text", "success");
   };
   const texttoreverse = () => {
     let newtext = text.split("").reverse().join("");
     settext(newtext);
-    props.showalert("Reverse the text", "success");
+    props.showAlert("Reverse the text", "success");
   };
   const texttoremoveextrasapce = () => {
     let newtext = text.split(/[ ]+/);
     settext(newtext.join(" "));
-    props.showalert("Remove Extra Spaces", "success");
+    props.showAlert("Remove Extra Spaces", "success");
   };
 
   const [text, settext] = useState("");

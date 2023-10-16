@@ -9,7 +9,7 @@ import { BrowserRouter as Main, Route, Routes } from "react-router-dom";
 function App() {
   const [alert, setAlert] = useState(null);
 
-  const showalert = (message, type) => {
+  const showAlert = (message, type) => {
     setAlert({
       msg: message,
       type: type,
@@ -24,11 +24,11 @@ function App() {
   const toggleMode = () => {
     if (mode === "light") {
       setmode("dark");
-      showalert("dark mode is enable", "success");
+      showAlert("dark mode is enable", "success");
       document.body.style.backgroundColor = "black";
     } else {
       setmode("light");
-      showalert("light mode is enable", "success");
+      showAlert("light mode is enable", "success");
       document.body.style.backgroundColor = "white";
     }
   };
@@ -50,7 +50,7 @@ function App() {
             path="/"
             element={
               <Textforms
-                showAlert={showalert}
+                showAlert={showAlert}
                 heading="Counter"
                 mode={mode}
                 toggleMode={toggleMode}
