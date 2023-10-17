@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function doubleText() {
+        let textElement = document.getElementById("demo1");
+        textElement.innerHTML += " " + textElement.innerHTML;
+      }
+      function clickevent() {
+        const firstnm = document.getElementById("fnm").value;
+        const lastnm = document.getElementById("lnm").value;
+
+        const full_name = firstnm + lastnm;
+        document.getElementById("full_nm").value = full_name;
+      }
+      function changeBackground() {
+        // var bg = document.getElementById("bgchng");
+        var red = Math.floor(Math.random() * 256);
+        var green = Math.floor(Math.random() * 256);
+        var blue = Math.floor(Math.random() * 256);
+
+        document.getElementById("bgchng").style.background =
+          "rgb(" + red + ", " + green + "," + blue + ")";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <h1 class="fw-bold bg-dark text-white p-3 text-center">VARIABLES</h1>
+      <div class="container">
+        <h2 class="fw-bold text-white bg-danger text-center">Let Variable</h2>
+        <div class="container bg-info p-3">
+          <p class="fw-bold text-white">
+            Variables defined with let cannot be Redeclared
+          </p>
+          <p class="fw-bold text-white">
+            Variables defined with let must be Declared before use
+          </p>
+          <p class="fw-bold text-white">
+            Variables defined with let have Block Scope
+          </p>
+          <br />
+          <label for="" class="fw-bold fs-3"
+            >Click the button double this text</label
+          >
+          <p id="demo1" class="fs-4">Hello javascript</p>
+          <br />
+          <button class="btn btn-warning" type="button" onclick="doubleText()">
+            Click Me
+          </button>
+        </div>
+      </div>
+
+      <div class="container mt-3">
+        <h2 class="fw-bold text-white bg-danger text-center">Const Variable</h2>
+        <div class="container bg-info p-3">
+          <p class="fw-bold text-white">
+            Variables defined with const cannot be Redeclared
+          </p>
+          <p class="fw-bold text-white">
+            Variables defined with const cannot be Reassigned
+          </p>
+          <p class="fw-bold text-white">
+            Variables defined with const have Block Scope
+          </p>
+          <br />
+          <table class="table table-secondary text-center">
+            <tr>
+              <td><label for="" class="fw-bold fs-4">First Name</label></td>
+
+              <td><input type="text" class="form-control" id="fnm" /></td>
+            </tr>
+            <tr>
+              <td><label for="" class="fw-bold fs-4">Last Name</label></td>
+              <td><input type="text" class="form-control" id="lnm" /></td>
+            </tr>
+            <tr>
+              <td><label for="" class="fw-bold fs-4">Full Name</label></td>
+              <td>
+                <input type="text" class="form-control" id="full_nm" disabled />
+              </td>
+            </tr>
+          </table>
+          <button class="btn btn-warning" type="button" onclick="clickevent()">
+            Click Me
+          </button>
+        </div>
+      </div>
+
+      <div class="container mt-3" >
+        <h2 class="fw-bold text-white bg-danger text-center">Var Variable</h2>
+        <div class="container py-3" id="bgchng" style="background-color: #0dcaf0">
+          <p class="fw-bold text-black">
+            Variables defined with var can be Redeclared
+          </p>
+          <p class="fw-bold text-black">
+            Variables defined with var can be Reassigned
+          </p>
+          <p class="fw-bold text-black">
+            Variables defined with var have no Block Scope
+          </p>
+          <br />
+          <p class="fw-bold fs-3">Change the color of background</p>
+          <button
+            class="btn btn-dark"
+            type="button"
+            onclick="changeBackground()"
+          >
+            Click here to changeBackground
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

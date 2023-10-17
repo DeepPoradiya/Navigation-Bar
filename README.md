@@ -1,5 +1,5 @@
-Live URL Link: https://deepporadiya.github.io/tfz/figma_task/index.html
+Live URL Link: https://deepporadiya.github.io/tfz/index.html
 
-- Task : figma Task
+- Task : React-Js
 
-- Topic : task complate 95% with responsive mobile screen ,tablet screen and desktop screen
+- Topic : read the reac-js documatation and revision
