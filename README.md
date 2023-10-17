@@ -1,5 +1,5 @@
 Live URL Link: https://deepporadiya.github.io/tfz/index.html
 
-- Task : React-Js
+- Task : React-Js and Next-js
 
-- Topic : read the reac-js documatation and revision
+- Topic : learn the  props and state  in react and installation step of next-js 
