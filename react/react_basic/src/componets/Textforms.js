@@ -39,7 +39,7 @@ export default function Textforms(props) {
           props.mode === "light" ? "dark" : "light"
         } border border-black border-3`}
       >
-        <h1 className="heading">{props.title}</h1>
+        <h1 className="heading">{props.heading}</h1>
         <div className="d-flex gap-3">
           <textarea
             onChange={texttochange}
