@@ -64,38 +64,38 @@ export default function Textforms(props) {
         </div>
         <div className=" bg-dark-subtle my-2 rounded-2 p-2 text-black border border-black border-2">
           <p className="fs-4 fw-bold">{text.length} Characters</p>
-          <p className="fs-4 fw-bold">{text.split(" ").length} Words</p>
+          <p className="fs-4 fw-bold">{text.split(" ").filter((element)=>{return element.length!==0}).length} Words</p>
           <p className="fs-4 fw-bold">
-            {0.008 * text.split(" ").length} minutes read
+            {0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} minutes read
           </p>
         </div>
         <div className="d-flex flex-column flex-md-row justify-content-center gap-3">
-          <button
-            className="btn btn-outline-primary my-2 "
+          <button disabled={text.length===0}
+            className="btn btn-primary my-2 "
             onClick={texttoupper}
           >
             Click To UppperCase
           </button>
-          <button
-            className="btn btn-outline-primary my-2"
+          <button  disabled={text.length===0}
+            className="btn btn-primary my-2"
             onClick={texttolower}
           >
             Click To LowerCase
           </button>
-          <button
-            className="btn btn-outline-primary my-2"
+          <button  disabled={text.length===0}
+            className="btn btn-primary my-2"
             onClick={texttoclear}
           >
             Click To Clear
           </button>
-          <button
-            className="btn btn-outline-primary my-2"
+          <button  disabled={text.length===0}
+            className="btn btn-primary my-2"
             onClick={texttoreverse}
           >
             Click To Reverse
           </button>
-          <button
-            className="btn btn-outline-primary my-2"
+          <button  disabled={text.length===0}
+            className="btn btn-primary my-2"
             onClick={texttoremoveextrasapce}
           >
             Click To Remove Extra Sapces
