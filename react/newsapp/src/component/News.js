@@ -2,61 +2,102 @@ import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 
 export class News extends Component {
-    articals=[
-         [
-            {
-              "source": { "id": "bbc-sport", "name": "BBC Sport" },
-              "author": null,
-              "title": "World Cup: India v Bangladesh - clips, radio & text",
-              "description": "Follow live text, in-play video clips and radio commentary as India play Bangladesh in the Men's Cricket World Cup 2023.",
-              "url": "http://www.bbc.co.uk/sport/live/cricket/66858253",
-              "urlToImage": "https:////m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.23.3/images/bbc-sport-logo.png",
-              "publishedAt": "2023-10-19T08:37:18.2900497Z",
-              "content": "Bangladesh: Liton Das, Tanzid Hasan, Najmul Hossain Shanto (c), Mehidy Hasan Miraz, Mushfiqur Rahim (wk), Towhid Hridoy, Mahmudullah, Nasum Ahmed, Hasan Mahmud, Mustafizur Rahman, Shoriful Islam.\r\nIn… [+172 chars]"
-            },
-            {
-              "source": { "id": "espn-cric-info", "name": "ESPN Cric Info" },
-              "author": null,
-              "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
-              "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
-              "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
-              "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
-              "publishedAt": "2020-04-27T11:41:47Z",
-              "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
-            },
-            {
-              "source": { "id": "espn-cric-info", "name": "ESPN Cric Info" },
-              "author": null,
-              "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
-              "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
-              "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
-              "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
-              "publishedAt": "2020-03-30T15:26:05Z",
-              "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
-            }
-          ]
-    ]
-    constructor()
-    {
-        super();
-        this.state ={
-            articals : this.articals,
-            loading :false
-        }
+  constructor() {
+    super();
+    this.state = {
+      articals: [], // Initialize articles as an empty array
+      loading: true, // Set loading to true initially
+      page: 1,
+      totalResults: 0, // Initialize totalResults to 0
+    };
+  }
+
+  async componentDidMount() {
+    let url =
+      "https://newsapi.org/v2/top-headlines?country=in&apiKey=ddc4c947926d4458a7e111547f87ae89&page=1&pageSize=20";
+    let data = await fetch(url);
+    let parseData = await data.json();
+    this.setState({ articals: parseData.articles, loading: false, totalResults: parseData.totalResults }); // Set articles, loading state, and totalResults
+  }
+
+  handlePrevClick = async () => {
+    if (this.state.page > 1) {
+      let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=ddc4c947926d4458a7e111547f87ae89&page=${
+        this.state.page - 1
+      }&pageSize=20`;
+      let data = await fetch(url);
+      let parseData = await data.json();
+      this.setState({
+        page: this.state.page - 1,
+        articals: parseData.articles,
+        loading: false,
+      });
     }
+  };
+
+  handleNextClick = async () => {
+    if (this.state.page * 20 < this.state.totalResults) {
+      let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=ddc4c947926d4458a7e111547f87ae89&page=${
+        this.state.page + 1
+      }&pageSize=20`;
+      let data = await fetch(url);
+      let parseData = await data.json();
+      this.setState({
+        page: this.state.page + 1,
+        articals: parseData.articles,
+        loading: false,
+      });
+    }
+  };
+
   render() {
     return (
-      <div className="container my-3">
-        <h2>NewsMonkey - Top Headlines</h2>
-        <div className="row">
-          <div className="col-md-4">
-            <NewsItem title="mytitle" description="description1" imgUrl="https:////m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.23.3/images/bbc-sport-logo.png" />
+      <div className="container-fluid bg-dark-subtle">
+        <div className="container py-4">
+          <div className="scrolling-container text-center">
+            <div className="scrolling-text">
+              <h2 className="fw-bold">
+                <span className="border-bottom border-black border-2">
+                  NewsMonkey -Top Headline
+                </span>
+              </h2>
+            </div>
           </div>
-          <div className="col-md-4">
-            <NewsItem title="mytitle" description="description1" />
+
+          <div className="row my-2">
+            {this.state.articals.map((element) => {
+              return (
+                <div className="col-lg-3 col-md-4 col-12" key={element.url}>
+                  <NewsItem
+                    title={element.title ? element.title.slice(0, 45) : ""}
+                    description={
+                      element.description
+                        ? element.description.slice(0, 70)
+                        : ""
+                    }
+                    imgUrl={element.urlToImage}
+                    newsurl={element.url}
+                  />
+                </div>
+              );
+            })}
           </div>
-          <div className="col-md-4">
-            <NewsItem title="mytitle" description="description1" />
+
+          <div className="d-flex justify-content-between">
+            <button
+              disabled={this.state.page <= 1}
+              className="btn btn-primary"
+              onClick={this.handlePrevClick}
+            >
+              &larr; Previous
+            </button>
+            <button
+              disabled={this.state.page * 20 >= this.state.totalResults}
+              className="btn btn-primary"
+              onClick={this.handleNextClick}
+            >
+              Next&rarr;
+            </button>
           </div>
         </div>
       </div>
