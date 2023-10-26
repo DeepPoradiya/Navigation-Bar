@@ -5,7 +5,7 @@ export class Spinner extends Component {
   render() {
     return (
       <div className='d-flex justify-content-center '>
-        <img src={loading} alt='loading' height='150px' style={{mixBlendMode:'multiply'}} />
+        <img src={loading} alt='loading' height='200px' style={{mixBlendMode:'multiply'}} />
       </div>
     )
   }
