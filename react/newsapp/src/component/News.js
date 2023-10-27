@@ -34,16 +34,23 @@ export class News extends Component {
   }
 
   async updateNews() {
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=ddc4c947926d4458a7e111547f87ae89&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    this.props.setProgress(10);
+
+    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
 
     let data = await fetch(url);
+    this.props.setProgress(30);
+
     let parseData = await data.json();
+    this.props.setProgress(70);
+
     this.setState({
       articles: parseData.articles,
       loading: false,
       totalResults: parseData.totalResults,
     }); // Set articles, loading state, and totalResults
+    this.props.setProgress(100);
   }
 
   async componentDidMount() {
@@ -62,7 +69,7 @@ export class News extends Component {
 
   fetchMoreData = async () => {
     this.setState({ page: this.state.page + 1 });
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=ddc4c947926d4458a7e111547f87ae89&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
 
     let data = await fetch(url);
     let parseData = await data.json();
@@ -75,44 +82,42 @@ export class News extends Component {
   render() {
     return (
       <>
-        <div className="container py-4">
-          <h2 className="fw-bold scroll-text glow-text text-center my-4">
-            NewsMonkey -Top {this.capitalizeFirstLetter(this.props.category)}{" "}
-            Headlines
-          </h2>
+        <h2 className="fw-bold scroll-text glow-text text-center my-4">
+          NewsMonkey -Top {this.capitalizeFirstLetter(this.props.category)}{" "}
+          Headlines
+        </h2>
 
-          {this.state.loading && <Spinner />}
-          <InfiniteScroll
-            dataLength={this.state.articles.length}
-            next={this.fetchMoreData}
-            hasMore={this.state.articles.length !== this.state.totalResults}
-            loader={<Spinner />}
-          >
-            <div className="container">
-              <div className="row my-2">
-                {this.state.articles.map((element) => {
-                  return (
-                    <div className="col-lg-3 col-md-4 col-12" key={element.url}>
-                      <NewsItem
-                        title={element.title ? element.title.slice(0, 45) : ""}
-                        description={
-                          element.description
-                            ? element.description.slice(0, 70)
-                            : ""
-                        }
-                        imgUrl={element.urlToImage}
-                        newsurl={element.url}
-                        author={element.author}
-                        date={element.publishedAt}
-                        source={element.source.name}
-                      />
-                    </div>
-                  );
-                })}
-              </div>
+        {this.state.loading && <Spinner />}
+        <InfiniteScroll
+          dataLength={this.state.articles.length}
+          next={this.fetchMoreData}
+          hasMore={this.state.articles.length < this.state.totalResults}
+          loader={<Spinner />}
+        >
+          <div className="container ">
+            <div className="row my-2">
+              {this.state.articles.map((element, index) => {
+                return (
+                  <div className="col-lg-3 col-md-4 col-12" key={index}>
+                    <NewsItem
+                      title={element.title ? element.title.slice(0, 45) : ""}
+                      description={
+                        element.description
+                          ? element.description.slice(0, 70)
+                          : ""
+                      }
+                      imgUrl={element.urlToImage}
+                      newsurl={element.url}
+                      author={element.author}
+                      date={element.publishedAt}
+                      source={element.source.name}
+                    />
+                  </div>
+                );
+              })}
             </div>
-          </InfiniteScroll>
-        </div>
+          </div>
+        </InfiniteScroll>
       </>
     );
   }
