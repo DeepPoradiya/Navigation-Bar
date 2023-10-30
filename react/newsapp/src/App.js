@@ -1,5 +1,3 @@
-import "./App.css";
-
 import React, { Component } from "react";
 import Navbar from "./component/Navbar";
 import News from "./component/News";
@@ -8,8 +6,8 @@ import LoadingBar from "react-top-loading-bar";
 
 export default class App extends Component {
   pageSize = 8;
-  apiKey = process.env.REACT_APP_NEWS_API;
-  // apiKey = "112c76b6ce774b699c7db99508e526b7"
+  // apiKey = process.env.REACT_APP_NEWS_API;
+  // apiKey = "ddc4c947926d4458a7e111547f87ae89"
   state = {
     progress: 0,
   };
