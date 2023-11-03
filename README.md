@@ -2,4 +2,4 @@ Live URL Link: https://deepporadiya.github.io/tfz/index.html
 
 - Task : React-Js 
 
-- Topic : fetch api online in jsonplaceholder show all data and also view particular selected data using useEffect , useState & useParam
+- Topic : Fetch API Task complate 100%  using useEffect,useState,UseLocation,useParam,Link and create a  function for show all data.
