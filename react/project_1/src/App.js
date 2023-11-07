@@ -1,16 +1,15 @@
 import React from "react";
 import { BrowserRouter as Main, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import Alldata from "./components/Alldata";
 import './App.css';
+import Profile from "./components/Profile";
 
 function App() {
   return (
     <Main>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Alldata />} />
-        {/* <Route exact path="/" element={} /> */}
+        <Route exact path="/Profile/:id" element={<Profile/>} />
       </Routes>
     </Main>
   );
