@@ -5,6 +5,8 @@ export default function Alldata() {
   const location = useLocation();
   const [userData, setUserData] = useState([]);
   const [dep, setDep] = useState([]);
+  const [selectedDep, setSelectedDep] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     fetch("https://dummyjson.com/users")
@@ -18,38 +20,67 @@ export default function Alldata() {
     const uniqdep = [...new Set(deps.flat())];
     setDep(uniqdep);
   }, [userData]);
+  // console.log(dep)
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
 
   const Alldata = () => {
-    return(
+    const filterUser = selectedDep
+      ? userData.filter((user) => user.company.department.includes(selectedDep))
+      : userData;
+      const filteredUsersWithSearch = searchTerm.trim()
+      ? filterUser.filter((user) => {
+          const searchLower = searchTerm.toLowerCase();
+          const idMatch = user.id.toString() === searchLower;
+          const firstNameMatch = user.firstName.toLowerCase().includes(searchLower);
+          const lastNameMatch = user.lastName.toLowerCase().includes(searchLower);
+          
+          return idMatch || firstNameMatch || lastNameMatch;
+        })
+      : filterUser;
+    return (
       <>
-    <div className="container my-4">
-      <div className="row row-gap-4">
-        {userData.map((userData, index) => {
-          return (
-            <div className="col-lg-3 col-md-6 col-12" key={index}>
-              <div className="card shadow border border-0">
-                <img src={userData.image} className="card-img-top " alt="..." />
-                <div className="card-body  text-center">
-                  <h5 className="card-title fw-bold  fs-4">
-                    {userData.username}
-                  </h5>
-                  <button className="btn btn-primary">
-                    <Link
-                      className="nav-link"
-                      to={`/Profile/${userData.id}`}
-                    >
-                      Click TO View Profile
-                    </Link>
-                  </button>
+        <div className="container my-4">
+          <div className="row row-gap-4">
+            {filteredUsersWithSearch.map((userData, index) => {
+              return (
+                <div className="col-lg-3 col-md-6 col-12" key={index}>
+                  <div className="card shadow border border-0  bg-primary-subtle">
+                    <div className="card-body  text-center">
+                      <img
+                        src={userData.image}
+                        className="img-fluid "
+                        alt="..."
+                        style={{
+                          borderRadius: "30rem",
+                          background: "white",
+                          boxShadow: "1px 0px 15px 1px black",
+                        }}
+                      />
+                      <h5 className="card-title fw-bold  fs-3 text-capitalize my-3 py-2">
+                        <span className=" p-2 rounded-2 ">
+                          {userData.firstName} {userData.lastName}
+                        </span>
+                      </h5>
+                      <button className="btn btn-dark">
+                        <Link
+                          className="nav-link"
+                          to={`/Profile/${userData.id}`}
+                        >
+                          Click To View Profile
+                        </Link>
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>;
-   </>
-    )
+              );
+            })}
+          </div>
+        </div>
+        ;
+      </>
+    );
   };
   return (
     <>
@@ -89,13 +120,12 @@ export default function Alldata() {
                 <ul className="dropdown-menu">
                   {dep.map((deptartment, index) => (
                     <li key={index}>
-                      <Link
+                      <button
                         className="dropdown-item"
-                        path=":department"
-                        to={`/${deptartment.department}`}
+                        onClick={() => setSelectedDep(deptartment)}
                       >
                         {deptartment}
-                      </Link>
+                      </button>
                     </li>
                   ))}
                 </ul>
@@ -110,8 +140,10 @@ export default function Alldata() {
               <input
                 className="form-control me-2"
                 type="search"
-                placeholder="Search"
+                placeholder="Search By ID"
                 aria-label="Search"
+                value={searchTerm}
+                onChange={handleChange}
               />
             </form>
           </div>
