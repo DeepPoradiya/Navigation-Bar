@@ -2,4 +2,4 @@ Live URL Link: https://deepporadiya.github.io/tfz/index.html
 
 - Task : React-Js 
 
-- Topic : API Fetch Task is complate and also transfer input  data one page to another page 
+- Topic : fetch the data from the API using useState,useEffect,slice() function and if condition and show data into card format.
