@@ -2,4 +2,4 @@ Live URL Link: https://deepporadiya.github.io/tfz/index.html
 
 - Task : React-Js 
 
-- Topic : fetch the data from the API using useState,useEffect,slice() function and if condition and show data into card format.
+- Topic : install the library of mui and  Add the Navbar in task And show the Data in Card  And Also ued the mui component in task. 
